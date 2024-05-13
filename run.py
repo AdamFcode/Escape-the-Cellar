@@ -1,3 +1,6 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+start = input("Are you brave enough to try to Escape the Cellar? (y/n)\n")
+    if start.lower() == "y":
+        gameStart()
+
+    else
+        print("Many have quaked in fear before you...")
