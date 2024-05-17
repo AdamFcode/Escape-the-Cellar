@@ -7,12 +7,14 @@ def read_story(filepath):
 # Function to start the game
 def adv_start():
     read_story("assets/text-files/intro-play.txt")
-    story_choice = input("Please select 1 or 2:\n")
-    if story_choice == "1":
+    story_choice = int(input("Please select 1 or 2:\n"))
+    if story_choice == 1:
         path_select()
-    elif story_choice == "2":
+    elif story_choice == 2:
         print("That's really too bad. Enjoy an eternity of darkness...")
     else:
-        error()
-        adv_start()
+        print("I am afraid that we cannot allow that selection. Please choose again.\n")
+        return adv_start()
+
+adv_start()
 
