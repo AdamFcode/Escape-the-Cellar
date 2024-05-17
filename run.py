@@ -43,7 +43,20 @@ def meet_troll():
     elif story_choice == 2:
         read_story("assets/text-files/stun-troll.txt")
         time.sleep(3)
-        stun_troll()
+        troll_stunned = int(input("Please select 1 or 2\n"))
+        if troll_stunned == 1 or 2:
+            read_story("assets/text-files/killed-by-troll.txt")
+            time.sleep(3)
+            read_story("assets/text-files/lose.txt")
+            play_again = int(input("Please select 1 or 2:\n"))
+            if play_again == 1:
+                adv_start()
+            elif play_again == 2:
+                exit()
+            else:
+                print("We shall take your inability to take instructions as a no...\n")
+                time.sleep(3)
+                exit()
     elif story_choice == 3:
         read_story("assets/text-files/killed-by-troll.txt")
         time.sleep(3)
