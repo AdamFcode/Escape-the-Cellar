@@ -1,3 +1,5 @@
+import time
+
 # Function to open, read and close the story txt files
 def read_story(filepath):
     f = open(filepath, "r")
@@ -14,6 +16,7 @@ def adv_start():
         print("That's really too bad. Enjoy an eternity of darkness...")
     else:
         print("I am afraid that we cannot allow that selection. Please choose again.\n")
+        time.sleep(3)
         return adv_start()
 
 # User selects their choice of path
@@ -26,6 +29,7 @@ def path_select():
         meet_troll()
     else:
         print("I am afraid that we cannot allow that selection. Please choose again.\n")
+        time.sleep(3)
         return path_select()
 
 adv_start()
