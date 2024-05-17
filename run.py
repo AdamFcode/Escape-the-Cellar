@@ -16,5 +16,17 @@ def adv_start():
         print("I am afraid that we cannot allow that selection. Please choose again.\n")
         return adv_start()
 
+# User selects their choice of path
+def path_select():
+    read_story("assets/text-files/path-select.txt")
+    story_choice = int(input("Please select 1 or 2:\n"))
+    if story_choice == 1:
+        meet_gargoyles()
+    elif story_choice == 2:
+        meet_troll()
+    else:
+        print("I am afraid that we cannot allow that selection. Please choose again.\n")
+        return path_select()
+
 adv_start()
 
