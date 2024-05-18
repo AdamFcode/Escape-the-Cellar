@@ -16,7 +16,7 @@ def adv_start():
     if story_choice == 1:
         path_select()
     elif story_choice == 2:
-        print("That's really too bad. Enjoy an eternity of darkness...")
+        print("That's really too bad. Enjoy an eternity of darkness...\n")
     else:
         print("I am afraid that we cannot allow that selection. Please choose again.\n")
         time.sleep(3)
@@ -68,6 +68,8 @@ def meet_troll():
         if play_again == 1:
             adv_start()
         elif play_again == 2:
+            print("Coward...\n")
+            time.sleep(3)
             exit()
         else:
             print("We shall take your inability to take instructions as a no...\n")
