@@ -117,6 +117,54 @@ def riddle_path_one():
         time.sleep(3)
         riddle_path_one()
 
+# The user meets a three-headed dog from hell
+def meet_cerberus():
+    read_story("assets/text-files/meet-cerberus.txt")
+    story_choice = int(input("Please select 1, 2 or 3:\n"))
+    if story_choice == 1:
+        read_story("assets/text-files/stun-cerberus.txt")
+        time.sleep(3)
+        cerberus_stunned = int(input("Please select 1 or 2\n"))
+        if cerberus_stunned == 1 or 2:
+            read_story("assets/text-files/killed-by-cerberus.txt")
+            time.sleep(3)
+            read_story("assets/text-files/lose.txt")
+            play_again = int(input("Please select 1 or 2:\n"))
+            if play_again == 1:
+                adv_start()
+            elif play_again == 2:
+                print(Fore.MAGENTA + Style.BRIGHT + "\nCoward...\n")
+                time.sleep(3)
+                exit()
+            else:
+                print(Fore.MAGENTA + Style.BRIGHT + "\nWe shall take your inability to take instructions as a no...\n")
+                time.sleep(3)
+                exit()
+    elif story_choice == 2:
+        read_story("assets/text-files/killed-by-cerberus.txt")
+        time.sleep(3)
+        read_story("assets/text-files/lose.txt")
+        play_again = int(input("Please select 1 or 2:\n"))
+        if play_again == 1:
+            adv_start()
+        elif play_again == 2:
+            print(Fore.MAGENTA + Style.BRIGHT + "\nCoward...\n")
+            time.sleep(3)
+            exit()
+        else:
+            print(Fore.MAGENTA + Style.BRIGHT + "\nWe shall take your inability to take instructions as a no...\n")
+            time.sleep(3)
+            exit()
+    elif story_choice == 3:
+        read_story("assets/text-files/defeat-cerberus.txt")
+        time.sleep(3)
+        elevator()
+    else:
+        print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
+        time.sleep(3)
+        meet_cerberus()
+
+
 adv_start()
 
 
