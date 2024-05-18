@@ -8,7 +8,7 @@ def read_story(filepath):
     f = open(filepath, "r")
     #Iterates through the lines in txt file with delay
     for char in f: 
-        print(char, end='')
+        print(Fore.MAGENTA + Style.BRIGHT + char, end='')
         time.sleep(.75)
     f.close()
 
@@ -19,9 +19,9 @@ def adv_start():
     if story_choice == 1:
         path_select()
     elif story_choice == 2:
-        print("That's really too bad. Enjoy an eternity of darkness...\n")
+        print(Fore.MAGENTA + Style.BRIGHT + "That's really too bad. Enjoy an eternity of darkness...\n")
     else:
-        print("I am afraid that we cannot allow that selection. Please choose again.\n")
+        print(Fore.MAGENTA + Style.BRIGHT + "I am afraid that we cannot allow that selection. Please choose again.\n")
         time.sleep(3)
         return adv_start()
 
@@ -34,7 +34,7 @@ def path_select():
     elif story_choice == 2:
         meet_troll()
     else:
-        print("I am afraid that we cannot allow that selection. Please choose again.\n")
+        print(Fore.MAGENTA + Style.BRIGHT + "I am afraid that we cannot allow that selection. Please choose again.\n")
         time.sleep(3)
         return path_select()
 
@@ -60,7 +60,7 @@ def meet_troll():
             elif play_again == 2:
                 exit()
             else:
-                print("We shall take your inability to take instructions as a no...\n")
+                print(Fore.MAGENTA + Style.BRIGHT + "We shall take your inability to take instructions as a no...\n")
                 time.sleep(3)
                 exit()
     elif story_choice == 3:
@@ -71,15 +71,15 @@ def meet_troll():
         if play_again == 1:
             adv_start()
         elif play_again == 2:
-            print("Coward...\n")
+            print(Fore.MAGENTA + Style.BRIGHT + "Coward...\n")
             time.sleep(3)
             exit()
         else:
-            print("We shall take your inability to take instructions as a no...\n")
+            print(Fore.MAGENTA + Style.BRIGHT + "We shall take your inability to take instructions as a no...\n")
             time.sleep(3)
             exit()
     else:
-        print("I am afraid that we cannot allow that selection. Please choose again.\n")
+        print(Fore.MAGENTA + Style.BRIGHT + "I am afraid that we cannot allow that selection. Please choose again.\n")
         time.sleep(3)
         meet_troll()
 
