@@ -1,4 +1,7 @@
 import time
+import colorama
+from colorama import Fore, Back, Style
+colorama.init(autoreset=True)
 
 # Function to open, read and close the story txt files
 def read_story(filepath):
