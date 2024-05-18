@@ -58,9 +58,11 @@ def meet_troll():
             if play_again == 1:
                 adv_start()
             elif play_again == 2:
+                print(Fore.MAGENTA + Style.BRIGHT + "\nCoward...\n")
+                time.sleep(3)
                 exit()
             else:
-                print(Fore.MAGENTA + Style.BRIGHT + "We shall take your inability to take instructions as a no...\n")
+                print(Fore.MAGENTA + Style.BRIGHT + "\nWe shall take your inability to take instructions as a no...\n")
                 time.sleep(3)
                 exit()
     elif story_choice == 3:
@@ -71,15 +73,15 @@ def meet_troll():
         if play_again == 1:
             adv_start()
         elif play_again == 2:
-            print(Fore.MAGENTA + Style.BRIGHT + "Coward...\n")
+            print(Fore.MAGENTA + Style.BRIGHT + "\nCoward...\n")
             time.sleep(3)
             exit()
         else:
-            print(Fore.MAGENTA + Style.BRIGHT + "We shall take your inability to take instructions as a no...\n")
+            print(Fore.MAGENTA + Style.BRIGHT + "\nWe shall take your inability to take instructions as a no...\n")
             time.sleep(3)
             exit()
     else:
-        print(Fore.MAGENTA + Style.BRIGHT + "I am afraid that we cannot allow that selection. Please choose again.\n")
+        print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
         time.sleep(3)
         meet_troll()
 
