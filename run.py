@@ -3,7 +3,10 @@ import time
 # Function to open, read and close the story txt files
 def read_story(filepath):
     f = open(filepath, "r")
-    print(f.read())
+    #Iterates through the lines in txt file with delay
+    for char in f: 
+        print(char, end='')
+        time.sleep(.75)
     f.close()
 
 # Function to start the game
