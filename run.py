@@ -85,6 +85,38 @@ def meet_troll():
         time.sleep(3)
         meet_troll()
 
+#User meets the Riddler on path 1
+def riddle_path_one():
+    read_story("assets/text-files/riddle-path-one.txt")
+    story_choice = int(input("Please select 1 or 2:\n"))
+    if story_choice == 1:
+        read_story("assets/text-files/riddle-right.txt")
+        time.sleep(3)
+        meet_cerberus()
+    elif story_choice == 2:
+        read_story("assets/text-files/riddle-wrong.txt")
+        time.sleep(3)
+        riddle_wrong = int(input("Please select 1 or 2:\n"))
+        if riddle_wrong == 1 or 2:
+            read_story("assets/text-files/killed-by-riddle.txt")
+            time.sleep(3) 
+            read_story("assets/text-files/lose.txt")
+            play_again = int(input("Please select 1 or 2:\n"))
+            if play_again == 1:
+                adv_start()
+            elif play_again == 2:
+                print(Fore.MAGENTA + Style.BRIGHT + "\nCoward...\n")
+                time.sleep(3)
+                exit()
+            else:
+                print(Fore.MAGENTA + Style.BRIGHT + "\nWe shall take your inability to take instructions as a no...\n")
+                time.sleep(3)
+                exit()
+    else:
+        print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
+        time.sleep(3)
+        riddle_path_one()
+
 adv_start()
 
 
