@@ -164,6 +164,44 @@ def meet_cerberus():
         time.sleep(3)
         meet_cerberus()
 
+#User is presented with an opportunity to escape via elevator
+def elevator():
+    read_story("assets/text-files/elevator.txt")
+    story_choice = int(input("Please select 1 or 2:\n"))
+    if story_choice == 1:
+        read_story("assets/text-files/elevator-escape.txt")
+        time.sleep(3)
+        read_story("assets/text-files/win.txt")
+        play_again = int(input("Please select 1 or 2:\n"))
+        if play_again == 1:
+            adv_start()
+        elif play_again == 2:
+            print(Fore.MAGENTA + Style.BRIGHT + "\nCoward...\n")
+            time.sleep(3)
+            exit()
+        else:
+            print(Fore.MAGENTA + Style.BRIGHT + "\nWe shall take your inability to take instructions as a no...\n")
+            time.sleep(3)
+            exit()
+    elif story_choice == 2:
+        read_story("assets/text-files/elevator-death.txt")
+        time.sleep(3)
+        read_story("assets/text-files/lose.txt")
+        play_again = int(input("Please select 1 or 2:\n"))
+        if play_again == 1:
+            adv_start()
+        elif play_again == 2:
+            print(Fore.MAGENTA + Style.BRIGHT + "\nCoward...\n")
+            time.sleep(3)
+            exit()
+        else:
+            print(Fore.MAGENTA + Style.BRIGHT + "\nWe shall take your inability to take instructions as a no...\n")
+            time.sleep(3)
+            exit()
+    else:
+        print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
+        time.sleep(3)
+        elevator()
 
 adv_start()
 
