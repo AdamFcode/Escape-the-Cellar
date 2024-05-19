@@ -56,10 +56,7 @@ def meet_troll():
         troll_stunned = int(input("Please select 1 or 2\n"))
         if troll_stunned == 1 or 2:
             read_story("assets/text-files/killed-by-troll.txt")
-            time.sleep(2)
-            read_story("assets/text-files/lose.txt")
-            time.sleep(2)
-            replay()
+            stun_kill()
     elif story_choice == 3:
         read_story("assets/text-files/killed-by-troll.txt")
         time.sleep(2)
@@ -96,10 +93,7 @@ def meet_cerberus():
         cerberus_stunned = int(input("Please select 1 or 2\n"))
         if cerberus_stunned == 1 or 2:
             read_story("assets/text-files/killed-by-cerberus.txt")
-            time.sleep(2)
-            read_story("assets/text-files/lose.txt")
-            time.sleep(2)
-            replay()
+            stun_kill()
     elif story_choice == 2:
         read_story("assets/text-files/killed-by-cerberus.txt")
         time.sleep(2)
@@ -153,10 +147,7 @@ def meet_gargoyles():
         gargoyle_stunned = int(input("Please select 1 or 2:\n"))
         if gargoyle_stunned == 1 or 2:
             read_story("assets/text-files/killed-by-gargoyles.txt")
-            time.sleep(2)
-            read_story("assets/text-files/lose.txt")
-            time.sleep(2)
-            replay()
+            stun_kill()
     elif story_choice == 3:
         read_story("assets/text-files/defeat-gargoyles.txt")
         time.sleep(2)
@@ -197,10 +188,7 @@ def meet_witch():
         witch_stunned = int(input("Please select 1 or 2:\n"))
         if witch_stunned == 1 or 2:
             read_story("assets/text-files/killed-by-witch.txt")
-            time.sleep(2)
-            read_story("assets/text-files/lose.txt")
-            time.sleep(2)
-            replay()
+            stun_kill()
     elif story_choice == 3:
         read_story("assets/text-files/defeat-witch.txt")
         time.sleep(2)
@@ -231,7 +219,6 @@ def hatch():
         time.sleep(2)
         hatch()
 
-
 # Function to offer user the option to replay
 def replay():
     play_again = int(input("Please select 1 or 2:\n"))
@@ -258,6 +245,12 @@ def riddle_incorrect():
         time.sleep(2)
         replay()
 
-elevator()
+def stun_kill():
+    time.sleep(2)
+    read_story("assets/text-files/lose.txt")
+    time.sleep(2)
+    replay()
+
+adv_start()
 
 
