@@ -1,4 +1,6 @@
+# Time imported for time.sleep function
 import time
+# Colorama imported for coloured text
 import colorama
 from colorama import Fore, Back, Style
 colorama.init(autoreset=True)
@@ -6,10 +8,11 @@ colorama.init(autoreset=True)
 # Function to open, read and close the story txt files
 def read_story(filepath):
     f = open(filepath, "r")
-    #Iterates through the lines in txt file with delay
+    # Iterates through the lines in txt file with delay
     for char in f: 
         print(Fore.MAGENTA + Style.BRIGHT + char, end='')
         time.sleep(.75)
+    # Closes the file after reading it
     f.close()
 
 # Function to start the game
@@ -139,7 +142,7 @@ def elevator():
         time.sleep(3)
         elevator()
 
-
+# Function to offer user the option to replay
 def replay():
     play_again = int(input("Please select 1 or 2:\n"))
     if play_again == 1:
