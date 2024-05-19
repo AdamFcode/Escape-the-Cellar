@@ -80,15 +80,7 @@ def riddle_path_one():
         time.sleep(2)
         meet_cerberus()
     elif story_choice == 2:
-        read_story("assets/text-files/riddle-wrong.txt")
-        time.sleep(2)
-        riddle_wrong = int(input("Please select 1 or 2:\n"))
-        if riddle_wrong == 1 or 2:
-            read_story("assets/text-files/killed-by-riddle.txt")
-            time.sleep(2) 
-            read_story("assets/text-files/lose.txt")
-            time.sleep(2)
-            replay()
+        riddle_incorrect()
     else:
         print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
         time.sleep(2)
@@ -182,15 +174,7 @@ def riddle_path_two():
         time.sleep(2)
         meet_witch()
     elif story_choice == 2:
-        read_story("assets/text-files/riddle-wrong.txt")
-        time.sleep(2)
-        riddle_wrong = int(input("Please select 1 or 2:\n"))
-        if riddle_wrong == 1 or 2:
-            read_story("assets/text-files/killed-by-riddle.txt")
-            time.sleep(2) 
-            read_story("assets/text-files/lose.txt")
-            time.sleep(2)
-            replay()
+        riddle_incorrect()
     else:
         print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
         time.sleep(2)
@@ -209,6 +193,18 @@ def replay():
         print(Fore.MAGENTA + Style.BRIGHT + "\nWe shall take your inability to take instructions as a no...\n")
         time.sleep(2)
         exit()
+
+# Function called after incorrect riddle answer
+def riddle_incorrect():
+    read_story("assets/text-files/riddle-wrong.txt")
+    time.sleep(2)
+    riddle_wrong = int(input("Please select 1 or 2:\n"))
+    if riddle_wrong == 1 or 2:
+        read_story("assets/text-files/killed-by-riddle.txt")
+        time.sleep(2) 
+        read_story("assets/text-files/lose.txt")
+        time.sleep(2)
+        replay()
 
 adv_start()
 
