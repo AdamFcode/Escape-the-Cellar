@@ -124,6 +124,7 @@ def elevator():
         time.sleep(2)
         read_story("assets/text-files/win.txt")
         time.sleep(2)
+        replay()
     elif story_choice == 2:
         read_story("assets/text-files/elevator-death.txt")
         time.sleep(2)
@@ -224,6 +225,7 @@ def hatch():
         time.sleep(2)
         read_story("assets/text-files/win.txt")
         time.sleep(2)
+        replay()
     else:
         print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
         time.sleep(2)
@@ -256,6 +258,6 @@ def riddle_incorrect():
         time.sleep(2)
         replay()
 
-hatch()
+elevator()
 
 
