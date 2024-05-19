@@ -20,12 +20,13 @@ def read_story(filepath):
 def title_read(filepath):
     f = open(filepath, "r")
     for char in f: 
-        print(Fore.MAGENTA + Style.BRIGHT + char, end='')
+        print(Fore.GREEN + Style.BRIGHT + char, end='')
         time.sleep(.15)
     f.close()
 
 # Function to start the game
 def adv_start():
+    time.sleep(2)
     read_story("assets/text-files/intro-play.txt")
     story_choice = int(input("Please select 1 or 2:\n"))
     if story_choice == 1:
@@ -260,5 +261,5 @@ def stun_kill():
     time.sleep(2)
     replay()
 
-
+adv_start()
 
