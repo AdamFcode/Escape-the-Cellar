@@ -282,5 +282,5 @@ def stun_kill():
     time.sleep(2)
     replay()
 
-elevator()
+adv_start()
 
