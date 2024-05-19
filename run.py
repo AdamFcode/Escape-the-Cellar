@@ -26,6 +26,7 @@ def title_read(filepath):
 
 # Function to start the game
 def adv_start():
+    title_read("assets/text-files/title.txt")
     time.sleep(2)
     read_story("assets/text-files/intro-play.txt")
     story_choice = int(input("Please select 1 or 2:\n"))
@@ -69,6 +70,8 @@ def meet_troll():
             stun_kill()
     elif story_choice == 3:
         read_story("assets/text-files/killed-by-troll.txt")
+        time.sleep(1)
+        title_read("assets/text-files/fail.txt")
         time.sleep(2)
         read_story("assets/text-files/lose.txt")
         time.sleep(2)
@@ -106,6 +109,8 @@ def meet_cerberus():
             stun_kill()
     elif story_choice == 2:
         read_story("assets/text-files/killed-by-cerberus.txt")
+        time.sleep(1)
+        title_read("assets/text-files/fail.txt")
         time.sleep(2)
         read_story("assets/text-files/lose.txt")
         time.sleep(2)
@@ -125,12 +130,16 @@ def elevator():
     story_choice = int(input("Please select 1 or 2:\n"))
     if story_choice == 1:
         read_story("assets/text-files/elevator-escape.txt")
+        time.sleep(1)
+        title_read("assets/text-files/congrats.txt")
         time.sleep(2)
         read_story("assets/text-files/win.txt")
         time.sleep(2)
         replay()
     elif story_choice == 2:
         read_story("assets/text-files/elevator-death.txt")
+        time.sleep(1)
+        title_read("assets/text-files/fail.txt")
         time.sleep(2)
         read_story("assets/text-files/lose.txt")
         time.sleep(2)
@@ -147,6 +156,8 @@ def meet_gargoyles():
     story_choice =int(input("Please select 1, 2 or 3:\n"))
     if story_choice == 1:
         read_story("assets/text-files/killed-by-gargoyles.txt")
+        time.sleep(1)
+        title_read("assets/text-files/fail.txt")
         time.sleep(2)
         read_story("assets/text-files/lose.txt")
         time.sleep(2)
@@ -188,6 +199,8 @@ def meet_witch():
     story_choice = int(input("Please select 1, 2 or 3:\n"))
     if story_choice == 1:
         read_story("assets/text-files/killed-by-witch.txt")
+        time.sleep(1)
+        title_read("assets/text-files/fail.txt")
         time.sleep(2)
         read_story("assets/text-files/lose.txt")
         time.sleep(2)
@@ -214,12 +227,16 @@ def hatch():
     story_choice = int(input("Please select 1 or 2:\n"))
     if story_choice == 1:
         read_story("assets/text-files/hatch-death.txt")
+        time.sleep(1)
+        title_read("assets/text-files/fail.txt")
         time.sleep(2)
         read_story("assets/text-files/lose.txt")
         time.sleep(2)
         replay()
     elif story_choice == 2:
         read_story("assets/text-files/hatch-escape.txt")
+        time.sleep(1)
+        title_read("assets/text-files/congrats.txt")
         time.sleep(2)
         read_story("assets/text-files/win.txt")
         time.sleep(2)
@@ -250,16 +267,20 @@ def riddle_incorrect():
     riddle_wrong = int(input("Please select 1 or 2:\n"))
     if riddle_wrong == 1 or 2:
         read_story("assets/text-files/killed-by-riddle.txt")
+        time.sleep(1)
+        title_read("assets/text-files/fail.txt")
         time.sleep(2) 
         read_story("assets/text-files/lose.txt")
         time.sleep(2)
         replay()
 
 def stun_kill():
+    time.sleep(1)
+    title_read("assets/text-files/fail.txt")
     time.sleep(2)
     read_story("assets/text-files/lose.txt")
     time.sleep(2)
     replay()
 
-adv_start()
+elevator()
 
