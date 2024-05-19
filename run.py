@@ -41,6 +41,7 @@ def path_select():
         time.sleep(2)
         return path_select()
 
+# Users chooses the downstairs route (Path A)
 # User meets a Troll
 def meet_troll():
     read_story("assets/text-files/meet-troll.txt")
@@ -141,6 +142,36 @@ def elevator():
         print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
         time.sleep(2)
         elevator()
+
+# User chooses the upstairs route (Path B)
+# User meets some Gargoyles
+def meet_gargoyles():
+    read_story("assets/text-files/meet-gargoyle.txt")
+    story_choice =int(input("Please select 1, 2 or 3:\n"))
+    if story_choice == 1:
+        read_story("assets/text-files/killed-by-gargoyles.txt")
+        time.sleep(2)
+        read_story("assets/text-files/lose.txt")
+        time.sleep(2)
+        replay()
+    elif story_choice == 2:
+        read_story("assets/text-files/stun-gargoyles.txt")
+        time.sleep(2)
+        gargoyle_stunned = int(input("Please select 1 or 2:\n"))
+        if gargoyle_stunned == 1 or 2:
+            read_story("assets/text-files/killed-by-gargoyles.txt")
+            time.sleep(2)
+            read_story("assets/text-files/lose.txt")
+            time.sleep(2)
+            replay()
+    elif story_choice == 3:
+        read_story("assets/text-files/defeat-gargoyles.txt")
+        time.sleep(2)
+        riddle_path_two()
+    else:
+        print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
+        time.sleep(2)
+        meet_gargoyles()
 
 # Function to offer user the option to replay
 def replay():
