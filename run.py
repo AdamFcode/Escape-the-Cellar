@@ -173,6 +173,29 @@ def meet_gargoyles():
         time.sleep(2)
         meet_gargoyles()
 
+# User meets the riddler on path 2
+def riddle_path_two():
+    read_story("assets/text-files/riddle-path-two.txt")
+    story_choice = int(input("Please select 1 or 2:\n"))
+    if story_choice == 1:
+        read_story("assets/text-files/riddle-right.txt")
+        time.sleep(2)
+        meet_witch()
+    elif story_choice == 2:
+        read_story("assets/text-files/riddle-wrong.txt")
+        time.sleep(2)
+        riddle_wrong = int(input("Please select 1 or 2:\n"))
+        if riddle_wrong == 1 or 2:
+            read_story("assets/text-files/killed-by-riddle.txt")
+            time.sleep(2) 
+            read_story("assets/text-files/lose.txt")
+            time.sleep(2)
+            replay()
+    else:
+        print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
+        time.sleep(2)
+        riddle_path_two()
+
 # Function to offer user the option to replay
 def replay():
     play_again = int(input("Please select 1 or 2:\n"))
