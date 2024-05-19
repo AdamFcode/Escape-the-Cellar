@@ -180,6 +180,36 @@ def riddle_path_two():
         time.sleep(2)
         riddle_path_two()
 
+# User meets a witch
+def meet_witch():
+    read_story("assets/text-files/meet-witch.txt")
+    story_choice = int(input("Please select 1, 2 or 3:\n"))
+    if story_choice == 1:
+        read_story("assets/text-files/killed-by-witch.txt")
+        time.sleep(2)
+        read_story("assets/text-files/lose.txt")
+        time.sleep(2)
+        replay()
+    elif story_choice == 2:
+        read_story("assets/text-files/stun-witch.txt")
+        time.sleep(2)
+        witch_stunned = int(input("Please select 1 or 2:\n"))
+        if witch_stunned == 1 or 2:
+            read_story("assets/text-files/killed-by-witch.txt")
+            time.sleep(2)
+            read_story("assets/text-files/lose.txt")
+            time.sleep(2)
+            replay()
+    elif story_choice == 3:
+        read_story("assets/text-files/defeat-witch.txt")
+        time.sleep(2)
+        hatch()
+    else:
+        print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
+        time.sleep(2)
+        meet_witch()
+    
+
 # Function to offer user the option to replay
 def replay():
     play_again = int(input("Please select 1 or 2:\n"))
