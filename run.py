@@ -54,32 +54,14 @@ def meet_troll():
             read_story("assets/text-files/killed-by-troll.txt")
             time.sleep(3)
             read_story("assets/text-files/lose.txt")
-            play_again = int(input("Please select 1 or 2:\n"))
-            if play_again == 1:
-                adv_start()
-            elif play_again == 2:
-                print(Fore.MAGENTA + Style.BRIGHT + "\nCoward...\n")
-                time.sleep(3)
-                exit()
-            else:
-                print(Fore.MAGENTA + Style.BRIGHT + "\nWe shall take your inability to take instructions as a no...\n")
-                time.sleep(3)
-                exit()
+            time.sleep(2)
+            replay()
     elif story_choice == 3:
         read_story("assets/text-files/killed-by-troll.txt")
         time.sleep(3)
         read_story("assets/text-files/lose.txt")
-        play_again = int(input("Please select 1 or 2:\n"))
-        if play_again == 1:
-            adv_start()
-        elif play_again == 2:
-            print(Fore.MAGENTA + Style.BRIGHT + "\nCoward...\n")
-            time.sleep(3)
-            exit()
-        else:
-            print(Fore.MAGENTA + Style.BRIGHT + "\nWe shall take your inability to take instructions as a no...\n")
-            time.sleep(3)
-            exit()
+        time.sleep(2)
+        replay()
     else:
         print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
         time.sleep(3)
@@ -101,17 +83,8 @@ def riddle_path_one():
             read_story("assets/text-files/killed-by-riddle.txt")
             time.sleep(3) 
             read_story("assets/text-files/lose.txt")
-            play_again = int(input("Please select 1 or 2:\n"))
-            if play_again == 1:
-                adv_start()
-            elif play_again == 2:
-                print(Fore.MAGENTA + Style.BRIGHT + "\nCoward...\n")
-                time.sleep(3)
-                exit()
-            else:
-                print(Fore.MAGENTA + Style.BRIGHT + "\nWe shall take your inability to take instructions as a no...\n")
-                time.sleep(3)
-                exit()
+            time.sleep(2)
+            replay()
     else:
         print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
         time.sleep(3)
@@ -129,32 +102,14 @@ def meet_cerberus():
             read_story("assets/text-files/killed-by-cerberus.txt")
             time.sleep(3)
             read_story("assets/text-files/lose.txt")
-            play_again = int(input("Please select 1 or 2:\n"))
-            if play_again == 1:
-                adv_start()
-            elif play_again == 2:
-                print(Fore.MAGENTA + Style.BRIGHT + "\nCoward...\n")
-                time.sleep(3)
-                exit()
-            else:
-                print(Fore.MAGENTA + Style.BRIGHT + "\nWe shall take your inability to take instructions as a no...\n")
-                time.sleep(3)
-                exit()
+            time.sleep(2)
+            replay()
     elif story_choice == 2:
         read_story("assets/text-files/killed-by-cerberus.txt")
         time.sleep(3)
         read_story("assets/text-files/lose.txt")
-        play_again = int(input("Please select 1 or 2:\n"))
-        if play_again == 1:
-            adv_start()
-        elif play_again == 2:
-            print(Fore.MAGENTA + Style.BRIGHT + "\nCoward...\n")
-            time.sleep(3)
-            exit()
-        else:
-            print(Fore.MAGENTA + Style.BRIGHT + "\nWe shall take your inability to take instructions as a no...\n")
-            time.sleep(3)
-            exit()
+        time.sleep(2)
+        replay()
     elif story_choice == 3:
         read_story("assets/text-files/defeat-cerberus.txt")
         time.sleep(3)
@@ -172,36 +127,31 @@ def elevator():
         read_story("assets/text-files/elevator-escape.txt")
         time.sleep(3)
         read_story("assets/text-files/win.txt")
-        play_again = int(input("Please select 1 or 2:\n"))
-        if play_again == 1:
-            adv_start()
-        elif play_again == 2:
-            print(Fore.MAGENTA + Style.BRIGHT + "\nCoward...\n")
-            time.sleep(3)
-            exit()
-        else:
-            print(Fore.MAGENTA + Style.BRIGHT + "\nWe shall take your inability to take instructions as a no...\n")
-            time.sleep(3)
-            exit()
+        time.sleep(2)
     elif story_choice == 2:
         read_story("assets/text-files/elevator-death.txt")
         time.sleep(3)
         read_story("assets/text-files/lose.txt")
-        play_again = int(input("Please select 1 or 2:\n"))
-        if play_again == 1:
-            adv_start()
-        elif play_again == 2:
-            print(Fore.MAGENTA + Style.BRIGHT + "\nCoward...\n")
-            time.sleep(3)
-            exit()
-        else:
-            print(Fore.MAGENTA + Style.BRIGHT + "\nWe shall take your inability to take instructions as a no...\n")
-            time.sleep(3)
-            exit()
+        time.sleep(2)
+        replay()
     else:
         print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
         time.sleep(3)
         elevator()
+
+
+def replay():
+    play_again = int(input("Please select 1 or 2:\n"))
+    if play_again == 1:
+        adv_start()
+    elif play_again == 2:
+        print(Fore.MAGENTA + Style.BRIGHT + "\nCoward...\n")
+        time.sleep(3)
+        exit()
+    else:
+        print(Fore.MAGENTA + Style.BRIGHT + "\nWe shall take your inability to take instructions as a no...\n")
+        time.sleep(3)
+        exit()
 
 adv_start()
 
