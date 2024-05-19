@@ -208,7 +208,27 @@ def meet_witch():
         print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
         time.sleep(2)
         meet_witch()
-    
+
+# User is presented with an opportunity to escape via hatch
+def hatch():
+    read_story("assets/text-files/hatch.txt")
+    story_choice = int(input("Please select 1 or 2:\n"))
+    if story_choice == 1:
+        read_story("assets/text-files/hatch-death.txt")
+        time.sleep(2)
+        read_story("assets/text-files/lose.txt")
+        time.sleep(2)
+        replay()
+    elif story_choice == 2:
+        read_story("assets/text-files/hatch-escape.txt")
+        time.sleep(2)
+        read_story("assets/text-files/win.txt")
+        time.sleep(2)
+    else:
+        print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
+        time.sleep(2)
+        hatch()
+
 
 # Function to offer user the option to replay
 def replay():
@@ -236,6 +256,6 @@ def riddle_incorrect():
         time.sleep(2)
         replay()
 
-adv_start()
+hatch()
 
 
