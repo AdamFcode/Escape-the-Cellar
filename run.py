@@ -15,6 +15,15 @@ def read_story(filepath):
     # Closes the file after reading it
     f.close()
 
+# Function to open read and close title cards
+# Prints quicker than read-story function
+def title_read(filepath):
+    f = open(filepath, "r")
+    for char in f: 
+        print(Fore.MAGENTA + Style.BRIGHT + char, end='')
+        time.sleep(.15)
+    f.close()
+
 # Function to start the game
 def adv_start():
     read_story("assets/text-files/intro-play.txt")
@@ -251,6 +260,5 @@ def stun_kill():
     time.sleep(2)
     replay()
 
-adv_start()
 
 
