@@ -274,6 +274,7 @@ def riddle_incorrect():
         time.sleep(2)
         replay()
 
+# Function called after an enemy has been stunned by the user
 def stun_kill():
     time.sleep(1)
     title_read("assets/text-files/fail.txt")
