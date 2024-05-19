@@ -20,7 +20,7 @@ def read_story(filepath):
 def title_read(filepath):
     f = open(filepath, "r")
     for char in f: 
-        print(Fore.GREEN + Style.BRIGHT + char, end='')
+        print(Fore.GREEN + Back.MAGENTA + Style.BRIGHT + char, end='')
         time.sleep(.15)
     f.close()
 
