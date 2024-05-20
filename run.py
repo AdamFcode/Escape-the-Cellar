@@ -1,22 +1,28 @@
 # Time imported for time.sleep function
+
 import time
 # Colorama imported for coloured text
+
 import colorama
 from colorama import Fore, Back, Style
 colorama.init(autoreset=True)
 
 # Function to open, read and close the story txt files
+
 def read_story(filepath):
     f = open(filepath, "r")
     # Iterates through the lines in txt file with delay
+
     for char in f: 
         print(Fore.MAGENTA + Style.BRIGHT + char, end='')
         time.sleep(.75)
     # Closes the file after reading it
+
     f.close()
 
 # Function to open read and close title cards
 # Prints quicker than read-story function
+
 def title_read(filepath):
     f = open(filepath, "r")
     for char in f: 
@@ -25,6 +31,7 @@ def title_read(filepath):
     f.close()
 
 # Function to start the game
+
 def adv_start():
     title_read("assets/text-files/title.txt")
     time.sleep(2)
@@ -40,6 +47,7 @@ def adv_start():
         return adv_start()
 
 # User selects their choice of path
+
 def path_select():
     read_story("assets/text-files/path-select.txt")
     story_choice = int(input("Please select 1 or 2:\n"))
@@ -54,6 +62,7 @@ def path_select():
 
 # Users chooses the downstairs route (Path A)
 # User meets a Troll
+
 def meet_troll():
     read_story("assets/text-files/meet-troll.txt")
     story_choice = int(input("Please select 1, 2 or 3:\n"))
@@ -81,7 +90,8 @@ def meet_troll():
         time.sleep(2)
         meet_troll()
 
-#User meets the Riddler on path 1
+# User meets the Riddler on path 1
+
 def riddle_path_one():
     read_story("assets/text-files/riddle-path-one.txt")
     story_choice = int(input("Please select 1 or 2:\n"))
@@ -97,6 +107,7 @@ def riddle_path_one():
         riddle_path_one()
 
 # The user meets a three-headed dog from hell
+
 def meet_cerberus():
     read_story("assets/text-files/meet-cerberus.txt")
     story_choice = int(input("Please select 1, 2 or 3:\n"))
@@ -124,7 +135,8 @@ def meet_cerberus():
         time.sleep(2)
         meet_cerberus()
 
-#User is presented with an opportunity to escape via elevator
+# User is presented with an opportunity to escape via elevator
+
 def elevator():
     read_story("assets/text-files/elevator.txt")
     story_choice = int(input("Please select 1 or 2:\n"))
@@ -151,6 +163,7 @@ def elevator():
 
 # User chooses the upstairs route (Path B)
 # User meets some Gargoyles
+
 def meet_gargoyles():
     read_story("assets/text-files/meet-gargoyle.txt")
     story_choice =int(input("Please select 1, 2 or 3:\n"))
@@ -179,6 +192,7 @@ def meet_gargoyles():
         meet_gargoyles()
 
 # User meets the riddler on path 2
+
 def riddle_path_two():
     read_story("assets/text-files/riddle-path-two.txt")
     story_choice = int(input("Please select 1 or 2:\n"))
@@ -194,6 +208,7 @@ def riddle_path_two():
         riddle_path_two()
 
 # User meets a witch
+
 def meet_witch():
     read_story("assets/text-files/meet-witch.txt")
     story_choice = int(input("Please select 1, 2 or 3:\n"))
@@ -222,6 +237,7 @@ def meet_witch():
         meet_witch()
 
 # User is presented with an opportunity to escape via hatch
+
 def hatch():
     read_story("assets/text-files/hatch.txt")
     story_choice = int(input("Please select 1 or 2:\n"))
@@ -247,6 +263,7 @@ def hatch():
         hatch()
 
 # Function to offer user the option to replay
+
 def replay():
     play_again = int(input("Please select 1 or 2:\n"))
     if play_again == 1:
@@ -261,6 +278,7 @@ def replay():
         exit()
 
 # Function called after incorrect riddle answer
+
 def riddle_incorrect():
     read_story("assets/text-files/riddle-wrong.txt")
     time.sleep(2)
@@ -275,6 +293,7 @@ def riddle_incorrect():
         replay()
 
 # Function called after an enemy has been stunned by the user
+
 def stun_kill():
     time.sleep(1)
     title_read("assets/text-files/fail.txt")
