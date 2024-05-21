@@ -539,6 +539,19 @@ def stun_kill():
     """
     time.sleep(1)
     title_read("assets/text-files/fail.txt")
+    lose_name()
+    read_story("assets/text-files/lose.txt")
+    time.sleep(2)
+    replay()
+
+
+# Function called when user loses (regards stored name)
+
+def lose_name():
+    """
+    Prints personalised message referencing
+    username on lose condition
+    """
     time.sleep(1)
     print((Fore.MAGENTA +
           Style.BRIGHT +
@@ -548,9 +561,5 @@ def stun_kill():
           Style.BRIGHT +
           "NOM NOM NOM! Simply delicious!"))
     time.sleep(2)
-    read_story("assets/text-files/lose.txt")
-    time.sleep(2)
-    replay()
 
-
-user_name()
+stun_kill()
