@@ -24,7 +24,7 @@ def read_story(filepath):
     Printed in colour with delay between lines
     Closes document
     """
-    with open(filepath, encoding = "utf-8") as f:
+    with open(filepath, encoding="utf-8") as f:
         for char in f:
             print(Fore.MAGENTA + Style.BRIGHT + char, end="")
             time.sleep(0.75)
@@ -40,7 +40,7 @@ def title_read(filepath):
     Prints the content quicker than read_story
     Required for ascii title cards
     """
-    with open(filepath, encoding = "utf-8") as f:
+    with open(filepath, encoding="utf-8") as f:
         for char in f:
             print(Fore.GREEN + Back.MAGENTA + Style.BRIGHT + char, end="")
             time.sleep(0.15)
