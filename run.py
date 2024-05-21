@@ -1,12 +1,12 @@
-# Time imported for time.sleep function
-
+"""
+Import time and colorama
+Time for time.delay function
+Used to stagger printing and
+keep presented text legible
+Colorama to style printed text
+"""
 
 import time
-
-
-# Colorama imported for text styling
-
-
 import colorama
 from colorama import Fore, Back, Style
 
