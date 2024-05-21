@@ -6,13 +6,40 @@ keep presented text legible
 Sys for exiting app in replay function
 Colorama to style printed text
 """
-
 import sys
 import time
 import colorama
 from colorama import Fore, Back, Style
-
 colorama.init(autoreset=True)
+
+# Declare name as empty string
+
+name = ""
+
+
+def user_name():
+    """
+    Request name from user
+    Store in global variable for
+    recall later
+    Return the adv_start function
+    """
+    global name
+    name = input(Fore.MAGENTA +
+                 Style.BRIGHT +
+                 "Before we began, your name, little one?")
+    print("\n")
+    time.sleep(1)
+    print(Fore.MAGENTA +
+          Style.BRIGHT +
+          "{}? A lovely name. Allow us to eat it...".format(name))
+    time.sleep(1)
+    print(Fore.MAGENTA +
+          Style.BRIGHT +
+          "Escape, and you may get it back. Let's begin...")
+    time.sleep(2)
+    adv_start()
+
 
 # Function to open, read and close the story txt files
 
@@ -516,4 +543,4 @@ def stun_kill():
     replay()
 
 
-adv_start()
+user_name()
