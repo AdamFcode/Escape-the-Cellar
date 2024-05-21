@@ -27,7 +27,7 @@ def user_name():
     global name
     name = input(Fore.MAGENTA +
                  Style.BRIGHT +
-                 "Before we began, your name, little one?")
+                 "Before we began, your name, little one?\n")
     print("\n")
     time.sleep(1)
     print(Fore.MAGENTA +
@@ -543,4 +543,4 @@ def stun_kill():
     replay()
 
 
-user_name()
+adv_start()
