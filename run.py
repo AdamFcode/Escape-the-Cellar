@@ -1,15 +1,19 @@
 # Time imported for time.sleep function
 
+
 import time
 
 
 # Colorama imported for text styling
 
+
 import colorama
 from colorama import Fore, Back, Style
+
 colorama.init(autoreset=True)
 
 # Function to open, read and close the story txt files
+
 
 def read_story(filepath):
     """
@@ -19,13 +23,15 @@ def read_story(filepath):
     Closes document
     """
     f = open(filepath, "r")
-    for char in f: 
-        print(Fore.MAGENTA + Style.BRIGHT + char, end='')
-        time.sleep(.75)
+    for char in f:
+        print(Fore.MAGENTA + Style.BRIGHT + char, end="")
+        time.sleep(0.75)
     f.close()
+
 
 # Function to open read and close title cards
 # Prints quicker than read-story function
+
 
 def title_read(filepath):
     """
@@ -34,12 +40,14 @@ def title_read(filepath):
     Required for ascii title cards
     """
     f = open(filepath, "r")
-    for char in f: 
-        print(Fore.GREEN + Back.MAGENTA + Style.BRIGHT + char, end='')
-        time.sleep(.15)
+    for char in f:
+        print(Fore.GREEN + Back.MAGENTA + Style.BRIGHT + char, end="")
+        time.sleep(0.15)
     f.close()
 
+
 # Function to start the game
+
 
 def adv_start():
     """
@@ -58,13 +66,23 @@ def adv_start():
     if story_choice == 1:
         path_select()
     elif story_choice == 2:
-        print(Fore.MAGENTA + Style.BRIGHT + "That's really too bad. Enjoy an eternity of darkness...\n")
+        print(
+            Fore.MAGENTA
+            + Style.BRIGHT
+            + "That's really too bad. Enjoy an eternity of darkness...\n"
+        )
     else:
-        print(Fore.MAGENTA + Style.BRIGHT + "I am afraid that we cannot allow that selection. Please choose again.\n")
+        print(
+            Fore.MAGENTA
+            + Style.BRIGHT
+            + "I am afraid that we cannot allow that selection. Please choose again.\n"
+        )
         time.sleep(2)
         return adv_start()
 
+
 # User selects their choice of path
+
 
 def path_select():
     """
@@ -81,12 +99,18 @@ def path_select():
     elif story_choice == 2:
         meet_troll()
     else:
-        print(Fore.MAGENTA + Style.BRIGHT + "I am afraid that we cannot allow that selection. Please choose again.\n")
+        print(
+            Fore.MAGENTA
+            + Style.BRIGHT
+            + "I am afraid that we cannot allow that selection. Please choose again.\n"
+        )
         time.sleep(2)
         return path_select()
 
+
 # Users chooses the downstairs route (Path A)
 # User meets a Troll
+
 
 def meet_troll():
     """
@@ -121,11 +145,17 @@ def meet_troll():
         time.sleep(2)
         replay()
     else:
-        print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
+        print(
+            Fore.MAGENTA
+            + Style.BRIGHT
+            + "\nI am afraid that we cannot allow that selection. Please choose again.\n"
+        )
         time.sleep(2)
         meet_troll()
 
+
 # User meets the Riddler on path 1
+
 
 def riddle_path_one():
     """
@@ -147,11 +177,17 @@ def riddle_path_one():
     elif story_choice == 2:
         riddle_incorrect()
     else:
-        print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
+        print(
+            Fore.MAGENTA
+            + Style.BRIGHT
+            + "\nI am afraid that we cannot allow that selection. Please choose again.\n"
+        )
         time.sleep(2)
         riddle_path_one()
 
+
 # The user meets a three-headed dog from hell
+
 
 def meet_cerberus():
     """
@@ -186,11 +222,17 @@ def meet_cerberus():
         time.sleep(2)
         elevator()
     else:
-        print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
+        print(
+            Fore.MAGENTA
+            + Style.BRIGHT
+            + "\nI am afraid that we cannot allow that selection. Please choose again.\n"
+        )
         time.sleep(2)
         meet_cerberus()
 
+
 # User is presented with an opportunity to escape via elevator
+
 
 def elevator():
     """
@@ -220,12 +262,18 @@ def elevator():
         time.sleep(2)
         replay()
     else:
-        print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
+        print(
+            Fore.MAGENTA
+            + Style.BRIGHT
+            + "\nI am afraid that we cannot allow that selection. Please choose again.\n"
+        )
         time.sleep(2)
         elevator()
 
+
 # User chooses the upstairs route (Path B)
 # User meets some Gargoyles
+
 
 def meet_gargoyles():
     """
@@ -239,7 +287,7 @@ def meet_gargoyles():
     Error message returns meet_gargoyles function
     """
     read_story("assets/text-files/meet-gargoyle.txt")
-    story_choice =int(input("Please select 1, 2 or 3:\n"))
+    story_choice = int(input("Please select 1, 2 or 3:\n"))
     if story_choice == 1:
         read_story("assets/text-files/killed-by-gargoyles.txt")
         time.sleep(1)
@@ -260,11 +308,17 @@ def meet_gargoyles():
         time.sleep(2)
         riddle_path_two()
     else:
-        print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
+        print(
+            Fore.MAGENTA
+            + Style.BRIGHT
+            + "\nI am afraid that we cannot allow that selection. Please choose again.\n"
+        )
         time.sleep(2)
         meet_gargoyles()
 
+
 # User meets the riddler on path 2
+
 
 def riddle_path_two():
     """
@@ -286,11 +340,17 @@ def riddle_path_two():
     elif story_choice == 2:
         riddle_incorrect()
     else:
-        print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
+        print(
+            Fore.MAGENTA
+            + Style.BRIGHT
+            + "\nI am afraid that we cannot allow that selection. Please choose again.\n"
+        )
         time.sleep(2)
         riddle_path_two()
 
+
 # User meets a witch
+
 
 def meet_witch():
     """
@@ -325,11 +385,17 @@ def meet_witch():
         time.sleep(2)
         hatch()
     else:
-        print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
+        print(
+            Fore.MAGENTA
+            + Style.BRIGHT
+            + "\nI am afraid that we cannot allow that selection. Please choose again.\n"
+        )
         time.sleep(2)
         meet_witch()
 
+
 # User is presented with an opportunity to escape via hatch
+
 
 def hatch():
     """
@@ -359,11 +425,17 @@ def hatch():
         time.sleep(2)
         replay()
     else:
-        print(Fore.MAGENTA + Style.BRIGHT + "\nI am afraid that we cannot allow that selection. Please choose again.\n")
+        print(
+            Fore.MAGENTA
+            + Style.BRIGHT
+            + "\nI am afraid that we cannot allow that selection. Please choose again.\n"
+        )
         time.sleep(2)
         hatch()
 
+
 # Function to offer user the option to replay
+
 
 def replay():
     """
@@ -383,11 +455,17 @@ def replay():
         time.sleep(2)
         exit()
     else:
-        print(Fore.MAGENTA + Style.BRIGHT + "\nWe shall take your inability to take instructions as a no...\n")
+        print(
+            Fore.MAGENTA
+            + Style.BRIGHT
+            + "\nWe shall take your inability to take instructions as a no...\n"
+        )
         time.sleep(2)
         exit()
 
+
 # Function called after incorrect riddle answer
+
 
 def riddle_incorrect():
     """
@@ -404,18 +482,20 @@ def riddle_incorrect():
         read_story("assets/text-files/killed-by-riddle.txt")
         time.sleep(1)
         title_read("assets/text-files/fail.txt")
-        time.sleep(2) 
+        time.sleep(2)
         read_story("assets/text-files/lose.txt")
         time.sleep(2)
         replay()
 
+
 # Function called after an enemy has been stunned by the user
+
 
 def stun_kill():
     """
     Called whenever a users choice stuns the enemy
     Prints fail and lose text files
-    Calls replay function 
+    Calls replay function
     """
     time.sleep(1)
     title_read("assets/text-files/fail.txt")
@@ -423,5 +503,6 @@ def stun_kill():
     read_story("assets/text-files/lose.txt")
     time.sleep(2)
     replay()
+
 
 adv_start()
