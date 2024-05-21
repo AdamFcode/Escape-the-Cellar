@@ -1,11 +1,13 @@
 """
-Import time and colorama
+Import time, sys and colorama
 Time for time.delay function
 Used to stagger printing and
 keep presented text legible
+Sys for exiting app in replay function
 Colorama to style printed text
 """
 
+import sys
 import time
 import colorama
 from colorama import Fore, Back, Style
@@ -453,7 +455,7 @@ def replay():
     elif play_again == 2:
         print(Fore.MAGENTA + Style.BRIGHT + "\nCoward...\n")
         time.sleep(2)
-        exit()
+        sys.exit()
     else:
         print(
             Fore.MAGENTA
@@ -461,7 +463,7 @@ def replay():
             + "\nWe shall take your inability to take instructions as a no...\n"
         )
         time.sleep(2)
-        exit()
+        sys.exit()
 
 
 # Function called after incorrect riddle answer
@@ -505,4 +507,4 @@ def stun_kill():
     replay()
 
 
-adv_start()
+replay()
