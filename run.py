@@ -80,7 +80,7 @@ def adv_start():
             + "I am afraid that we cannot allow that selection. Please choose again.\n"
         )
         time.sleep(2)
-        return adv_start()
+        adv_start()
 
 
 # User selects their choice of path
@@ -107,7 +107,7 @@ def path_select():
             + "I am afraid that we cannot allow that selection. Please choose again.\n"
         )
         time.sleep(2)
-        return path_select()
+        path_select()
 
 
 # Users chooses the downstairs route (Path A)
@@ -507,4 +507,4 @@ def stun_kill():
     replay()
 
 
-replay()
+path_select()
