@@ -569,4 +569,20 @@ def lose_name():
           Style.BRIGHT +
           "NOM NOM NOM! Simply delicious!"))
 
+# Function called when user wins(regards stored name)
+
+def win_name():
+    """
+    Prints personalised message referencing
+    username on win condition
+    """
+    time.sleep(1)
+    print((Fore.MAGENTA +
+          Style.BRIGHT +
+          "\nNow where is that name? Ah! {}!".format(name)))
+    time.sleep(1)
+    print((Fore.MAGENTA +
+          Style.BRIGHT +
+          "A tasty morsel! But it is yours to keep!"))
+
 stun_kill()
