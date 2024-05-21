@@ -533,6 +533,8 @@ def stun_kill():
     """
     Called whenever a users choice stuns the enemy
     Prints fail and lose text files
+    Prints sneering comment that
+    returns users entered name
     Calls replay function
     """
     time.sleep(1)
