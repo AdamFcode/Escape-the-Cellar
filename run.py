@@ -24,11 +24,10 @@ def read_story(filepath):
     Printed in colour with delay between lines
     Closes document
     """
-    f = open(filepath, "r")
-    for char in f:
-        print(Fore.MAGENTA + Style.BRIGHT + char, end="")
-        time.sleep(0.75)
-    f.close()
+    with open(filepath, "r") as f:
+        for char in f:
+            print(Fore.MAGENTA + Style.BRIGHT + char, end="")
+            time.sleep(0.75)
 
 
 # Function to open read and close title cards
@@ -41,11 +40,10 @@ def title_read(filepath):
     Prints the content quicker than read_story
     Required for ascii title cards
     """
-    f = open(filepath, "r")
-    for char in f:
-        print(Fore.GREEN + Back.MAGENTA + Style.BRIGHT + char, end="")
-        time.sleep(0.15)
-    f.close()
+    with open(filepath, "r") as f:
+        for char in f:
+            print(Fore.GREEN + Back.MAGENTA + Style.BRIGHT + char, end="")
+            time.sleep(0.15)
 
 
 # Function to start the game
