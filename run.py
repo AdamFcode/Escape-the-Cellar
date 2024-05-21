@@ -1,7 +1,9 @@
 # Time imported for time.sleep function
 
 import time
-# Colorama imported for coloured text
+
+
+# Colorama imported for text styling
 
 import colorama
 from colorama import Fore, Back, Style
@@ -10,20 +12,27 @@ colorama.init(autoreset=True)
 # Function to open, read and close the story txt files
 
 def read_story(filepath):
+    """
+    Opens the selected txt file
+    Iterates through the file and prints content
+    Printed in colour with delay between lines
+    Closes document
+    """
     f = open(filepath, "r")
-    # Iterates through the lines in txt file with delay
-
     for char in f: 
         print(Fore.MAGENTA + Style.BRIGHT + char, end='')
         time.sleep(.75)
-    # Closes the file after reading it
-
     f.close()
 
 # Function to open read and close title cards
 # Prints quicker than read-story function
 
 def title_read(filepath):
+    """
+    Performs same function as read_story
+    Prints the content quicker than read_story
+    Required for ascii title cards
+    """
     f = open(filepath, "r")
     for char in f: 
         print(Fore.GREEN + Back.MAGENTA + Style.BRIGHT + char, end='')
@@ -33,6 +42,15 @@ def title_read(filepath):
 # Function to start the game
 
 def adv_start():
+    """
+    Prints the title and intro
+    Asks user whether they wish to play
+    Provides input for answer
+    If yes advances to path_selection
+    If no it exits the app
+    If input is invalid returns error message
+    Error leads to adv_start restarting.
+    """
     title_read("assets/text-files/title.txt")
     time.sleep(2)
     read_story("assets/text-files/intro-play.txt")
@@ -49,6 +67,13 @@ def adv_start():
 # User selects their choice of path
 
 def path_select():
+    """
+    Prints path selection file
+    Requests user input for path selection
+    Valid input decides next pathway
+    Invalid input returns error message
+    Error message restarts path_select function
+    """
     read_story("assets/text-files/path-select.txt")
     story_choice = int(input("Please select 1 or 2:\n"))
     if story_choice == 1:
@@ -64,6 +89,16 @@ def path_select():
 # User meets a Troll
 
 def meet_troll():
+    """
+    Prints troll confrontation
+    Requests input for 3 choices
+    Input leads to either advancement,
+    game over, or another input
+    Second input leads to game over
+    regardless of choice
+    Incorrect input returns error message
+    Error message returns meet_troll function
+    """
     read_story("assets/text-files/meet-troll.txt")
     story_choice = int(input("Please select 1, 2 or 3:\n"))
     if story_choice == 1:
@@ -93,6 +128,16 @@ def meet_troll():
 # User meets the Riddler on path 1
 
 def riddle_path_one():
+    """
+    Prints riddle for path 1
+    Requests input for 2 choices
+    Input leads to either advancement
+    or another input.
+    Second input leads to game over
+    regardless of choice
+    Incorrect input returns error message
+    Error message returns riddle_path_one function
+    """
     read_story("assets/text-files/riddle-path-one.txt")
     story_choice = int(input("Please select 1 or 2:\n"))
     if story_choice == 1:
@@ -109,6 +154,16 @@ def riddle_path_one():
 # The user meets a three-headed dog from hell
 
 def meet_cerberus():
+    """
+    Prints cerberus confrontation
+    Requests input for 3 choices
+    Input leads to either advancement,
+    game over, or another input
+    Second input leads to game over
+    regardless of choice
+    Incorrect input returns error message
+    Error message returns meet_cerberus function
+    """
     read_story("assets/text-files/meet-cerberus.txt")
     story_choice = int(input("Please select 1, 2 or 3:\n"))
     if story_choice == 1:
@@ -138,6 +193,14 @@ def meet_cerberus():
 # User is presented with an opportunity to escape via elevator
 
 def elevator():
+    """
+    Prints elevator escape opportunity
+    Requests input of 2 choices
+    One leads to game over
+    Other leads to win condition
+    Invalid input returns error message
+    Error message returns elevator function
+    """
     read_story("assets/text-files/elevator.txt")
     story_choice = int(input("Please select 1 or 2:\n"))
     if story_choice == 1:
@@ -165,6 +228,16 @@ def elevator():
 # User meets some Gargoyles
 
 def meet_gargoyles():
+    """
+    Prints gargoyles confrontation
+    Requests input for 3 choices
+    Input leads to either advancement,
+    game over, or another input
+    Second input leads to game over
+    regardless of choice
+    Incorrect input returns error message
+    Error message returns meet_gargoyles function
+    """
     read_story("assets/text-files/meet-gargoyle.txt")
     story_choice =int(input("Please select 1, 2 or 3:\n"))
     if story_choice == 1:
@@ -194,6 +267,16 @@ def meet_gargoyles():
 # User meets the riddler on path 2
 
 def riddle_path_two():
+    """
+    Prints riddle path 2
+    Requests input for 2 choices
+    Input leads to either advancement
+    or another input.
+    Second input leads to game over
+    regardless of choice
+    Incorrect input returns error message
+    Error message returns riddle_path_two function
+    """
     read_story("assets/text-files/riddle-path-two.txt")
     story_choice = int(input("Please select 1 or 2:\n"))
     if story_choice == 1:
@@ -210,6 +293,16 @@ def riddle_path_two():
 # User meets a witch
 
 def meet_witch():
+    """
+    Prints witch confrontation
+    Requests input for 3 choices
+    Input leads to either advancement,
+    game over, or another input
+    Second input leads to game over
+    regardless of choice
+    Incorrect input returns error message
+    Error message returns meet_witch function
+    """
     read_story("assets/text-files/meet-witch.txt")
     story_choice = int(input("Please select 1, 2 or 3:\n"))
     if story_choice == 1:
@@ -239,6 +332,14 @@ def meet_witch():
 # User is presented with an opportunity to escape via hatch
 
 def hatch():
+    """
+    Prints hatch escape opportunity
+    Requests input of 2 choices
+    One leads to game over
+    Other leads to win condition
+    Invalid input returns error message
+    Error message returns hatch function
+    """
     read_story("assets/text-files/hatch.txt")
     story_choice = int(input("Please select 1 or 2:\n"))
     if story_choice == 1:
@@ -265,6 +366,15 @@ def hatch():
 # Function to offer user the option to replay
 
 def replay():
+    """
+    Called directly after lose or win text file
+    Requests input for play again question
+    as presented in those files
+    If yes returns user to adv_start function
+    If no exits the app
+    Incorrect input returns tongue in cheek message
+    and exits the app
+    """
     play_again = int(input("Please select 1 or 2:\n"))
     if play_again == 1:
         adv_start()
@@ -280,6 +390,13 @@ def replay():
 # Function called after incorrect riddle answer
 
 def riddle_incorrect():
+    """
+    Called when riddle selection on either
+    path is incorrect.
+    Requests choice of 1 or 2 from user
+    Returns game over regardless of choice
+    Game over condition calls the replay function
+    """
     read_story("assets/text-files/riddle-wrong.txt")
     time.sleep(2)
     riddle_wrong = int(input("Please select 1 or 2:\n"))
@@ -295,6 +412,11 @@ def riddle_incorrect():
 # Function called after an enemy has been stunned by the user
 
 def stun_kill():
+    """
+    Called whenever a users choice stuns the enemy
+    Prints fail and lose text files
+    Calls replay function 
+    """
     time.sleep(1)
     title_read("assets/text-files/fail.txt")
     time.sleep(2)
@@ -303,4 +425,3 @@ def stun_kill():
     replay()
 
 adv_start()
-
