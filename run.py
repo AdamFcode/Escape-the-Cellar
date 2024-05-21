@@ -537,10 +537,18 @@ def stun_kill():
     """
     time.sleep(1)
     title_read("assets/text-files/fail.txt")
+    time.sleep(1)
+    print((Fore.MAGENTA +
+          Style.BRIGHT +
+          "\nNow where is that name? Ah! {}!".format(name)))
+    time.sleep(1)
+    print((Fore.MAGENTA +
+          Style.BRIGHT +
+          "NOM NOM NOM! Simply delicious!"))
     time.sleep(2)
     read_story("assets/text-files/lose.txt")
     time.sleep(2)
     replay()
 
 
-adv_start()
+user_name()
