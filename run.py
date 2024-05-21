@@ -283,6 +283,7 @@ def elevator():
         read_story("assets/text-files/elevator-escape.txt")
         time.sleep(1)
         title_read("assets/text-files/congrats.txt")
+        win_name()
         time.sleep(2)
         read_story("assets/text-files/win.txt")
         time.sleep(2)
@@ -462,6 +463,7 @@ def hatch():
         read_story("assets/text-files/hatch-escape.txt")
         time.sleep(1)
         title_read("assets/text-files/congrats.txt")
+        win_name()
         time.sleep(2)
         read_story("assets/text-files/win.txt")
         time.sleep(2)
@@ -585,4 +587,4 @@ def win_name():
           Style.BRIGHT +
           "A tasty morsel! But it is yours to keep!"))
 
-stun_kill()
+hatch()
