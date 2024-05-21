@@ -75,7 +75,8 @@ def adv_start():
         print(
             Fore.MAGENTA
             + Style.BRIGHT
-            + "I am afraid that we cannot allow that selection. Please choose again.\n"
+            + "I am afraid that we cannot allow that selection."
+            " Please choose again.\n"
         )
         time.sleep(2)
         adv_start()
@@ -102,7 +103,8 @@ def path_select():
         print(
             Fore.MAGENTA
             + Style.BRIGHT
-            + "I am afraid that we cannot allow that selection. Please choose again.\n"
+            + "I am afraid that we cannot allow that selection."
+            " Please choose again.\n"
         )
         time.sleep(2)
         path_select()
@@ -148,7 +150,8 @@ def meet_troll():
         print(
             Fore.MAGENTA
             + Style.BRIGHT
-            + "\nI am afraid that we cannot allow that selection. Please choose again.\n"
+            + "\nI am afraid that we cannot allow that selection."
+            " Please choose again.\n"
         )
         time.sleep(2)
         meet_troll()
@@ -180,7 +183,8 @@ def riddle_path_one():
         print(
             Fore.MAGENTA
             + Style.BRIGHT
-            + "\nI am afraid that we cannot allow that selection. Please choose again.\n"
+            + "\nI am afraid that we cannot allow that selection."
+            " Please choose again.\n"
         )
         time.sleep(2)
         riddle_path_one()
@@ -225,7 +229,8 @@ def meet_cerberus():
         print(
             Fore.MAGENTA
             + Style.BRIGHT
-            + "\nI am afraid that we cannot allow that selection. Please choose again.\n"
+            + "\nI am afraid that we cannot allow that selection."
+            " Please choose again.\n"
         )
         time.sleep(2)
         meet_cerberus()
@@ -265,7 +270,8 @@ def elevator():
         print(
             Fore.MAGENTA
             + Style.BRIGHT
-            + "\nI am afraid that we cannot allow that selection. Please choose again.\n"
+            + "\nI am afraid that we cannot allow that selection."
+            " Please choose again.\n"
         )
         time.sleep(2)
         elevator()
@@ -311,7 +317,8 @@ def meet_gargoyles():
         print(
             Fore.MAGENTA
             + Style.BRIGHT
-            + "\nI am afraid that we cannot allow that selection. Please choose again.\n"
+            + "\nI am afraid that we cannot allow that selection."
+            " Please choose again.\n"
         )
         time.sleep(2)
         meet_gargoyles()
@@ -343,7 +350,8 @@ def riddle_path_two():
         print(
             Fore.MAGENTA
             + Style.BRIGHT
-            + "\nI am afraid that we cannot allow that selection. Please choose again.\n"
+            + "\nI am afraid that we cannot allow that selection."
+            " Please choose again.\n"
         )
         time.sleep(2)
         riddle_path_two()
@@ -388,7 +396,8 @@ def meet_witch():
         print(
             Fore.MAGENTA
             + Style.BRIGHT
-            + "\nI am afraid that we cannot allow that selection. Please choose again.\n"
+            + "\nI am afraid that we cannot allow that selection."
+            " Please choose again.\n"
         )
         time.sleep(2)
         meet_witch()
@@ -428,7 +437,8 @@ def hatch():
         print(
             Fore.MAGENTA
             + Style.BRIGHT
-            + "\nI am afraid that we cannot allow that selection. Please choose again.\n"
+            + "\nI am afraid that we cannot allow that selection."
+            " Please choose again.\n"
         )
         time.sleep(2)
         hatch()
@@ -458,7 +468,8 @@ def replay():
         print(
             Fore.MAGENTA
             + Style.BRIGHT
-            + "\nWe shall take your inability to take instructions as a no...\n"
+            + "\nWe shall take your inability to"
+            " take instructions as a no...\n"
         )
         time.sleep(2)
         sys.exit()
@@ -505,4 +516,4 @@ def stun_kill():
     replay()
 
 
-path_select()
+adv_start()
