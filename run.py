@@ -748,4 +748,11 @@ def win_name():
           "A tasty morsel! But it is yours to keep!"))
 
 
-user_name()
+def main():
+    """
+    Function to inititate the app for new user
+    """
+    user_name()
+
+if __name__ == "__main__":
+    main()
