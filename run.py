@@ -573,6 +573,7 @@ def lose_name():
 
 # Function called when user wins(regards stored name)
 
+
 def win_name():
     """
     Prints personalised message referencing
@@ -586,5 +587,6 @@ def win_name():
     print((Fore.MAGENTA +
           Style.BRIGHT +
           "A tasty morsel! But it is yours to keep!"))
+
 
 hatch()
