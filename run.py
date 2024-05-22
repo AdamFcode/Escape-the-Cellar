@@ -32,7 +32,7 @@ def user_name():
     time.sleep(1)
     print(Fore.MAGENTA +
           Style.BRIGHT +
-          "{}? A lovely name. Allow us to eat it...".format(name))
+          f"{name}? A lovely name. Allow us to eat it...")
     time.sleep(1)
     print(Fore.MAGENTA +
           Style.BRIGHT +
@@ -676,7 +676,7 @@ def riddle_incorrect():
             read_story("assets/text-files/killed-by-riddle.txt")
             time.sleep(1)
             title_read("assets/text-files/fail.txt")
-            lose_name
+            lose_name()
             time.sleep(2)
             read_story("assets/text-files/lose.txt")
             time.sleep(2)
@@ -722,7 +722,7 @@ def lose_name():
     time.sleep(1)
     print((Fore.MAGENTA +
           Style.BRIGHT +
-          "\nNow where is that name? Ah! {}!".format(name)))
+          f"\nNow where is that name? Ah! {name}!"))
     time.sleep(1)
     print((Fore.MAGENTA +
           Style.BRIGHT +
@@ -739,7 +739,7 @@ def win_name():
     time.sleep(1)
     print((Fore.MAGENTA +
           Style.BRIGHT +
-          "\nNow where is that name? Ah! {}!".format(name)))
+          f"\nNow where is that name? Ah! {name}!"))
     time.sleep(1)
     print((Fore.MAGENTA +
           Style.BRIGHT +
