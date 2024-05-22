@@ -14,7 +14,7 @@ colorama.init(autoreset=True)
 
 # Declare name as empty string
 
-name = ""
+NAME = ""
 
 
 def user_name():
@@ -24,15 +24,15 @@ def user_name():
     recall later
     Return the adv_start function
     """
-    global name
-    name = input(Fore.MAGENTA +
+    global NAME
+    NAME = input(Fore.MAGENTA +
                  Style.BRIGHT +
                  "Before we began, your name, little one?\n")
     print("\n")
     time.sleep(1)
     print(Fore.MAGENTA +
           Style.BRIGHT +
-          f"{name}? A lovely name. Allow us to eat it...")
+          f"{NAME}? A lovely name. Allow us to eat it...")
     time.sleep(1)
     print(Fore.MAGENTA +
           Style.BRIGHT +
@@ -722,7 +722,7 @@ def lose_name():
     time.sleep(1)
     print((Fore.MAGENTA +
           Style.BRIGHT +
-          f"\nNow where is that name? Ah! {name}!"))
+          f"\nNow where is that name? Ah! {NAME}!"))
     time.sleep(1)
     print((Fore.MAGENTA +
           Style.BRIGHT +
@@ -739,7 +739,7 @@ def win_name():
     time.sleep(1)
     print((Fore.MAGENTA +
           Style.BRIGHT +
-          f"\nNow where is that name? Ah! {name}!"))
+          f"\nNow where is that name? Ah! {NAME}!"))
     time.sleep(1)
     print((Fore.MAGENTA +
           Style.BRIGHT +
