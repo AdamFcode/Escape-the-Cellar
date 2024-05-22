@@ -109,15 +109,14 @@ def adv_start():
             time.sleep(2)
             adv_start()
     except ValueError:
-            print(
+        print(
             Fore.MAGENTA
-                + Style.BRIGHT
-                + "I am afraid that we cannot allow that selection."
-                " Please choose again.\n"
-            )
-            time.sleep(2)
-            adv_start()
-        
+            + Style.BRIGHT
+            + "I am afraid that we cannot allow that selection."
+            " Please choose again.\n"
+        )
+        time.sleep(2)
+        adv_start()
 
 
 # User selects their choice of path
@@ -148,15 +147,14 @@ def path_select():
             time.sleep(2)
             path_select()
     except ValueError:
-            print(
+        print(
             Fore.MAGENTA
-                + Style.BRIGHT
-                + "I am afraid that we cannot allow that selection."
-                " Please choose again.\n"
-            )
-            time.sleep(2)
-            path_select()
-        
+            + Style.BRIGHT
+            + "I am afraid that we cannot allow that selection."
+            " Please choose again.\n"
+        )
+        time.sleep(2)
+        path_select()
 
 
 # Users chooses the downstairs route (Path A)
@@ -218,7 +216,7 @@ def meet_troll():
             meet_troll()
     except ValueError:
         print(
-        Fore.MAGENTA
+            Fore.MAGENTA
             + Style.BRIGHT
             + "I am afraid that we cannot allow that selection."
             " Please choose again.\n"
@@ -260,14 +258,14 @@ def riddle_path_one():
             time.sleep(2)
             riddle_path_one()
     except ValueError:
-            print(
+        print(
             Fore.MAGENTA
-                + Style.BRIGHT
-                + "I am afraid that we cannot allow that selection."
-                " Please choose again.\n"
-            )
-            time.sleep(2)
-            riddle_path_one()
+            + Style.BRIGHT
+            + "I am afraid that we cannot allow that selection."
+            " Please choose again.\n"
+        )
+        time.sleep(2)
+        riddle_path_one()
 
 
 # The user meets a three-headed dog from hell
@@ -297,7 +295,7 @@ def meet_cerberus():
                     stun_kill()
             except ValueError:
                 print(
-                Fore.MAGENTA
+                    Fore.MAGENTA
                     + Style.BRIGHT
                     + "I am afraid that we cannot allow that selection."
                     " Please choose again.\n"
@@ -327,14 +325,14 @@ def meet_cerberus():
             time.sleep(2)
             meet_cerberus()
     except ValueError:
-            print(
+        print(
             Fore.MAGENTA
-                + Style.BRIGHT
-                + "I am afraid that we cannot allow that selection."
-                " Please choose again.\n"
-            )
-            time.sleep(2)
-            meet_cerberus()
+            + Style.BRIGHT
+            + "I am afraid that we cannot allow that selection."
+            " Please choose again.\n"
+        )
+        time.sleep(2)
+        meet_cerberus()
 
 
 # User is presented with an opportunity to escape via elevator
@@ -380,14 +378,14 @@ def elevator():
             time.sleep(2)
             elevator()
     except ValueError:
-                print(
-                    Fore.MAGENTA
-                    + Style.BRIGHT
-                    + "I am afraid that we cannot allow that selection."
-                    " Please choose again.\n"
-                )
-                time.sleep(2)
-                elevator()
+        print(
+            Fore.MAGENTA
+            + Style.BRIGHT
+            + "I am afraid that we cannot allow that selection."
+            " Please choose again.\n"
+        )
+        time.sleep(2)
+        elevator()
 
 # User chooses the upstairs route (Path B)
 # User meets some Gargoyles
@@ -447,14 +445,14 @@ def meet_gargoyles():
             time.sleep(2)
             meet_gargoyles()
     except ValueError:
-                print(
-                    Fore.MAGENTA
-                    + Style.BRIGHT
-                    + "I am afraid that we cannot allow that selection."
-                    " Please choose again.\n"
-                )
-                time.sleep(2)
-                meet_gargoyles()
+        print(
+            Fore.MAGENTA
+            + Style.BRIGHT
+            + "I am afraid that we cannot allow that selection."
+            " Please choose again.\n"
+        )
+        time.sleep(2)
+        meet_gargoyles()
 
 
 # User meets the riddler on path 2
@@ -490,14 +488,14 @@ def riddle_path_two():
             time.sleep(2)
             riddle_path_two()
     except ValueError:
-                print(
-                    Fore.MAGENTA
-                    + Style.BRIGHT
-                    + "I am afraid that we cannot allow that selection."
-                    " Please choose again.\n"
-                )
-                time.sleep(2)
-                riddle_path_two()
+        print(
+            Fore.MAGENTA
+            + Style.BRIGHT
+            + "I am afraid that we cannot allow that selection."
+            " Please choose again.\n"
+        )
+        time.sleep(2)
+        riddle_path_two()
 
 # User meets a witch
 
@@ -556,14 +554,14 @@ def meet_witch():
             time.sleep(2)
             meet_witch()
     except ValueError:
-                print(
-                    Fore.MAGENTA
-                    + Style.BRIGHT
-                    + "I am afraid that we cannot allow that selection."
-                    " Please choose again.\n"
-                )
-                time.sleep(2)
-                meet_witch()
+        print(
+            Fore.MAGENTA
+            + Style.BRIGHT
+            + "I am afraid that we cannot allow that selection."
+            " Please choose again.\n"
+        )
+        time.sleep(2)
+        meet_witch()
 
 
 # User is presented with an opportunity to escape via hatch
@@ -579,7 +577,7 @@ def hatch():
     Error message returns hatch function
     """
     read_story("assets/text-files/hatch.txt")
-    try: 
+    try:
         story_choice = int(input("Please select 1 or 2:\n"))
         if story_choice == 1:
             read_story("assets/text-files/hatch-death.txt")
@@ -609,14 +607,14 @@ def hatch():
             time.sleep(2)
             hatch()
     except ValueError:
-                print(
-                    Fore.MAGENTA
-                    + Style.BRIGHT
-                    + "I am afraid that we cannot allow that selection."
-                    " Please choose again.\n"
-                )
-                time.sleep(2)
-                hatch()
+        print(
+            Fore.MAGENTA
+            + Style.BRIGHT
+            + "I am afraid that we cannot allow that selection."
+            " Please choose again.\n"
+        )
+        time.sleep(2)
+        hatch()
 
 # Function to offer user the option to replay
 
@@ -649,14 +647,14 @@ def replay():
             time.sleep(2)
             sys.exit()
     except ValueError:
-                print(
-                    Fore.MAGENTA
-                    + Style.BRIGHT
-                    + "I am afraid that we cannot allow that selection."
-                    " Please choose again.\n"
-                )
-                time.sleep(2)
-                replay()
+        print(
+            Fore.MAGENTA
+            + Style.BRIGHT
+            + "I am afraid that we cannot allow that selection."
+            " Please choose again.\n"
+            )
+        time.sleep(2)
+        replay()
 
 
 # Function called after incorrect riddle answer
@@ -684,14 +682,14 @@ def riddle_incorrect():
             time.sleep(2)
             replay()
     except ValueError:
-                print(
-                    Fore.MAGENTA
-                    + Style.BRIGHT
-                    + "I am afraid that we cannot allow that selection."
-                    " Please choose again.\n"
-                )
-                time.sleep(2)
-                riddle_incorrect()
+        print(
+            Fore.MAGENTA
+            + Style.BRIGHT
+            + "I am afraid that we cannot allow that selection."
+            " Please choose again.\n"
+        )
+        time.sleep(2)
+        riddle_incorrect()
 
 
 # Function called after an enemy has been stunned by the user
@@ -753,6 +751,7 @@ def main():
     Function to inititate the app for new user
     """
     user_name()
+
 
 if __name__ == "__main__":
     main()
