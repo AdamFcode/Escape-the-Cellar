@@ -29,6 +29,21 @@ LucidChart was selected to visualise the flow of the adventure and to provide a 
 ## Txt Files
 The narrative of the adventure is stored under assets in txt files. By doing so, a function to read the text could be declared and then called throughout the code in order to relay the narrative to the user without crowding the code itself. This also allowed for ASCII art to be implemented in order to provide visual flair for the title, "lose" screen and "win" screen.
 
+## Narrative Framing
+The narrative is presented to the user as the guiding comments of a nameless entity. Though showing clear enjoyment in the users "predicament", there are moments in which it seems that the narrator is rooting for the user. Text as provided by the narrator uses colorama in order to present it as purple. Red was considered but was utimately decided against as it evoked the feeling of a "horror" story which, though similar, this story is not.
+
+All text being read from the txt files is presented with time delays in order to provide the narrative line by line and avoid cluttering the terminal to the degree that the user is confused as to where the current text begins and the previous text ends. 
+
+The users choice selection is presented as standard white text. Visually, this not only provides narrative breaks for the user, but also distances the input request from that of the narrator. All inputs except for the username input expect an integer, either 1 or 2, or 1, 2 or 3. In the event of the user inputting either an incorrect integer or a string of letters, an error message is printed to the console and the current function restarts. In this way, the narrative continues with all prior selections still marked and the provided username at the beginning of the app remains stored.
+
+Below are examples of how input errors are handled.
+
+### Image of Incorrect Integer Input
+![Incorrect Integer](assets/readme-images/wrong-number-input.webp)
+
+### Image of Letters Input
+![Letters Input](assets/readme-images/word-input.webp)
+
 ## Name input
 Upon initiation the app requests a username from the user. This username is stored and recalled upon a "win" or "loss" condition. Should the user fail or succeed and then decide to replay, the name input is skipped as the previously entered name remains stored. Only by refusing replay or restarting the app will the user be asked to reenter a name.
 
@@ -56,6 +71,23 @@ If the user agrees to play, they are provided with a selection of pathway. There
 
 ### Image of Play Acceptance and Path Selection
 ![Play Accepted](assets/readme-images/accept-play-path.webp)
+
+## Story Advancement
+Throughout the game, selecting the correct option will advance the story and move the user through the cellar. When the user makes a decision, the narrator clearly informs the user whether they have been successful or not. This provided text remains aligned with the general narrative and how it has thus far been presented. The code provides gaps in order to segregate the narrative beats and provide a visual sense of progression.
+
+Below is an example of the correct selection being made and the story advancing.
+
+### Image of Story Advancing
+![Story Advances](assets/readme-images/story-advance)
+
+## Stun conditions
+on most floors of the cellar, the user is greeted by a monster and asked to react. Many of these have an option that leads to a "stun condition". These are humorous developments that provide tongue-in-cheek text and a further choice for the user. In all stun conditions, the users selection leads to failure. They have been included in order to provide a bit of brevity and also to instill hope in the already doomed player.
+
+### Image of a Stun condition
+![Stun Condition](assets/readme-images/stun-choice.webp)
+
+### Image of Failure Following Stun Condition
+![Stun Failure](assets/readme-images/stun-kill.webp)
 
 # Abandoned Features
 
