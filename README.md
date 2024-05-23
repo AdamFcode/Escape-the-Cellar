@@ -22,6 +22,8 @@ The above will be adressed under Testing below.
 ## LucidChart
 LucidChart was selected to visualise the flow of the adventure and to provide a visual guide to reference when writing the code. The free version of LucidChart was used which limits the number of shapes the user has access to in any given document. As a result of this, some remaining shapes had to be manually placed later via MS Paint, which slightly upset the visual uniformity of the chart.
 
+The chart is provided below.
+
 ### Image of the Chart
 ![LucidChart](assets/readme-images/cellar-flowchart.webp)
 
@@ -51,6 +53,8 @@ Once given, a brief message confirms the name to the user and then proceeds with
 
 In terms of narration, the name is requested by the nameless entity, who then "steals" it and promises the user they can have it back if they succeed. The name is indeed returned upon success; in the event of failure, the nameless entity eats the name. This narrative feature was inspired by Hayao Miyazaki's film "Spirited Away", in which a young girls name is comandeered by a witch and held as collateral until she satisfies the conditions of a work contract in order to release her parents.
 
+Below are images showing how username input is handled by the app.
+
 ### Image of Name Request
 ![Name Request](assets/readme-images/name-request.webp)
 
@@ -59,6 +63,8 @@ In terms of narration, the name is requested by the nameless entity, who then "s
 
 ## Title and Intro
 Next, the user is shown the title card for the app along with an introductory passage to inform them of the narrative framing. Here, the user is asked whether they wish to proceed with the game. If accepted, the narrator commends their bravery and the game continues. Upon refusal, the narrator decries the user as a coward and the app ceases to run.
+
+Below are images of the title card and how the app responds when the user does not wish to play the game.
 
 ### Image of Title and Intro
 ![Title and Intro](assets/readme-images/title-intro.webp)
@@ -69,6 +75,8 @@ Next, the user is shown the title card for the app along with an introductory pa
 ## Path Selection
 If the user agrees to play, they are provided with a selection of pathway. There are two to choose from; one which leads upstairs and another that leads downstairs. It is possible to succeed regardless of which pathway you select here. 
 
+Below is an image of how the path selection is presented to the player.
+
 ### Image of Play Acceptance and Path Selection
 ![Play Accepted](assets/readme-images/accept-play-path.webp)
 
@@ -78,16 +86,46 @@ Throughout the game, selecting the correct option will advance the story and mov
 Below is an example of the correct selection being made and the story advancing.
 
 ### Image of Story Advancing
-![Story Advances](assets/readme-images/story-advance)
+![Story Advances](assets/readme-images/story-advance.webp)
 
 ## Stun conditions
-on most floors of the cellar, the user is greeted by a monster and asked to react. Many of these have an option that leads to a "stun condition". These are humorous developments that provide tongue-in-cheek text and a further choice for the user. In all stun conditions, the users selection leads to failure. They have been included in order to provide a bit of brevity and also to instill hope in the already doomed player.
+On most floors of the cellar, the user is greeted by a monster and asked to react. Many of these have three options instead of two; the third option leads to a "stun condition". These are humorous developments that provide tongue-in-cheek text and a further binary choice for the user. In all stun conditions, the users selection leads to failure. They have been included in order to provide a bit of levity and also to instill hope in the already doomed player.
+
+Below are images showing an example of a stun condition, how it is narratively handled and how it proceeds to failure.
+
+### Image of Three Choice Selection
+![Three Choices](assets/readme-images/three-choice.webp)
 
 ### Image of a Stun condition
 ![Stun Condition](assets/readme-images/stun-choice.webp)
 
 ### Image of Failure Following Stun Condition
 ![Stun Failure](assets/readme-images/stun-kill.webp)
+
+## Fail Condition
+In the event of failure, the user is greeted with another ASCII title, followed by a short piece of text in which the nameless entity permanantly consumes the users name. They are then offered the option to replay the game, along with specific text that refers to the users failure in escaping. If they accept, the app returns to the title screen and begins the game again, with the previously entered username still stored. If the player refuses, the nameless entity accuses the user of cowardice and the app is exited.
+
+Below are images of the fail title, the user being offered a replay and what is returns if users reject the replay option.
+
+### Image of Fail Title
+![Fail Title](assets/readme-images/lose-name.webp)
+
+### Image of Replay on Failure
+![Fail Replay](assets/readme-images/replay.webp)
+
+### Image of Text on Replay Refused
+![Replay Refused](assets/readme-images/replay-refuse.webp)
+
+## Win Condition
+In the event of success, the user is presented with another ASCII title, followed by a short piece of text in which the nameless entity returns the users name. They are then offered the option to replay the game, along with specific text that refers to the users success in escaping. If they accept, the app returns to the title screen and begins the game again, with the previously entered username still stored. If the player refuses, the nameless entity accuses the user of cowardice and the app is exited.
+
+Below are images of the win title and how a replay request is presented to the user should they have succeeded in escaping the cellar.
+
+### Image of Win Title
+![Win Title](assets/readme-images/win-name.webp)
+
+### Image of Replay on Success
+![Success Replay](assets/readme-images/win-replay.webp)
 
 # Abandoned Features
 
