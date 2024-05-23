@@ -36,6 +36,8 @@ The narrative is presented to the user as the guiding comments of a nameless ent
 
 All text being read from the txt files is presented with time delays in order to provide the narrative line by line and avoid cluttering the terminal to the degree that the user is confused as to where the current text begins and the previous text ends. 
 
+## Error Handling
+
 The users choice selection is presented as standard white text. Visually, this not only provides narrative breaks for the user, but also distances the input request text from that of the narrator. All inputs except for the username input expect an integer, either 1 or 2, or 1, 2 or 3. In the event of the user inputting either an incorrect integer or a string of letters, an error message is printed to the console and the current function restarts. In this way, the narrative continues with all prior selections still marked and the provided username at the beginning of the app remains stored.
 
 Below are examples of how input errors are handled.
