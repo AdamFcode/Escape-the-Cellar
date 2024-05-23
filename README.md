@@ -163,18 +163,52 @@ As noted under abandoned features, the possibility of several adventures being o
 ## Bugs
 
 # Deployment
+Deployment required an Heroku account to host the app. Once an account was created, the following steps were followed:
+* From the Heroku dashboard, select new in the upper right corner, followed by create new app.
+* Enter an appropriate app name and select region, which was EU in this case.
+* Select Create New App
+* Under settings, select Reveal Config Vars. Enter PORT as a key with 8000 as the value and then add.
+* Scroll to buildpacks and add Python then Node.js for dependancies. Ensure they are added in that order.
+* Return to deployment and select deployment method which was GitHub in this case.
+* Enter the relevant repository source and connect.
+* Select deploy from branch which provided a landing page on Heroku for your app.
+* In the top right, select "Open App" to launch in a new window
 
 # Credits
 ## Written Reference Sources
+The following forum posts were consulted in constructing the title_read and read_stroylines functions:
+* https://stackoverflow.com/questions/24292806/how-can-i-pass-a-txt-file-as-a-function-parameter
+* https://www.reddit.com/r/learnpython/comments/x1rt5n/i_have_pylint_errors_please_help/
 
+The following websites were consulted throughout and proved invaluable:
+* https://stackoverflow.com
+* https://pieriantraining.com/
+* https://www.shecodes.io/
+* https://realpython.com/
+* https://www.learnpython.org/
 
 ## Video Reference Sources
-
+The following YouTube channeles were consulted during the planning stages of the project:
+* https://www.youtube.com/@Baober
+* https://www.youtube.com/@TezFraser
+* https://www.youtube.com/@TechWithTim
 
 ## Learning Materials
 The learning materials, video tutorials and modules provided by codeinstitute were consulted regularly during the project.
 
 ## Text Content
+The riddles used in-game were sourced from the following article: 
+* https://www.playosmo.com/kids-learning/riddles-for-kids/
+
+The ASCII were generated using the following website:  
+* https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
+
+All spellchecks for both text content and the readme were performed on Microsoft Word
+
+All other text content written by AdamFcode
+
+## Other
+Microsoft Paint was used to expand/edit the LucidChart image.
 
 # Acknowledgement
 With appreciation for aid lent by the project mentor and class CI provided by codeinstitue, as well as fellow students in the slack channel.
