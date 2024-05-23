@@ -178,7 +178,7 @@ The app contains branching pathways that lead to different scenarios and provide
 
 ## Validator Testing
 ### Pylint
-The Pylint score initially returned a rating in the of roughly seven(exact figure undocumented). 1trhough correct, it was possible to increase the score to 9.83. Two issues remained.
+The Pylint score initially returned a rating of roughly seven(exact figure undocumented). 1trhough correct, it was possible to increase the score to 9.83. Two issues remained.
 
 The first is for using the global statement. Worried that changing this would affect the storage and recall of the username later in the app, various articles were consulted on the nature of the issue. It was decided that within the scope of this project it was safe to leave it as is, though it has been noted as an issue for further builds.
 
