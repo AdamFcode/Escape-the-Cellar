@@ -1,7 +1,6 @@
 # Escape the Cellar
 Escape the Cellar is a python-based text adventure that challenges the user to escape a cellar that they have been imprisoned in by a formless entity. This entity serves as the narrator and leads the user through a sequence of challenges that require choices to be made by the user. The game has several points at which the user can "fail" and be offered the chance to try again. There are only two means of escaping, each requiring the user to successfully navigate through the choices until they reach the end.
 
-![Landing Page](assets/readme-images/title-intro.webp)
 The deployed site can be accessed from here: [Escape the Cellar](https://escape-the-cellar-de7d0d9c5297.herokuapp.com/)
 
 # Preparation
