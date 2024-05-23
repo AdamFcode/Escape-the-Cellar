@@ -22,7 +22,7 @@ The above will be adressed under Testing below.
 ## LucidChart
 LucidChart was selected to visualise the flow of the adventure and to provide a visual guide to reference when writing the code. The free version of LucidChart was used which limits the number of shapes the user has access to in any given document. As a result of this, some remaining shapes had to be manually placed later via MS Paint, which slightly upset the visual uniformity of the chart.
 
-The chart is provided below.
+The chart is provided below; white shapes represent neutral choices. Green shapes represent correct pathways through the apps, whereas red shapes represent dead-ends where the user loses. Blue shapes represent "stun-conditions", where the user is bound to fail but presented with another narrative beat.
 
 ### Image of the Chart
 ![LucidChart](assets/readme-images/cellar-flowchart.webp)
