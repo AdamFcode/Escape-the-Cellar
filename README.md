@@ -64,7 +64,7 @@ Below are images showing how username input is handled by the app.
 ![Name Input](assets/readme-images/name-documented.webp)
 
 ## Title and Intro
-Next, the user is shown the title card for the app along with an introductory passage to inform them of the narrative framing. Here, the user is asked whether they wish to proceed with the game. If accepted, the narrator commends their bravery and the game continues. Upon refusal, the narrator decries the user as a coward and the app ceases to run.
+Next, the user is shown the title card for the app along with an introductory passage to inform them of the narrative framing. Here, the user is asked whether they wish to proceed with the game. If accepted, the narrator commends their bravery and the game continues. Upon refusal, the narrator sarcastically tells the user to enjoy remaining stationary in the cellar and the app is exited.
 
 Below are images of the title card and how the app responds when the user does not wish to play the game.
 
