@@ -146,7 +146,7 @@ The following features are intended to be implemented at a future date.
 More floors and pathways have been earmarked for future development in order to expand the scope of the app. Due to project deadlines, these could not be implemented sooner.
 
 ## Asymmetrical Plotting
-As visible in the plotting chart above, the two pathways in the adventure are symmetrical with one another in how they proceed. this allowed for a seamless flow throughout the planning and implementation stages, though it has been noted that some users may be able to identify the pattern upon repeat plays and essentially "gamify" the experience. Though not entirely likely considering how the narrative is presented, it is a noted issue which could be addressed with asymmetrical design should the narrative be expanded.
+As visible in the plotting chart above, the two pathways in the adventure are symmetrical with one another in how they proceed. This allowed for a seamless flow throughout the planning and implementation stages, though it has been noted that some users may be able to identify the pattern upon repeat plays and essentially "gamify" the experience. Though not entirely likely considering how the narrative is presented, it is a noted issue which could be addressed with asymmetrical design should the narrative be expanded.
 
 ## Further implementation of ASCII
 The visual effect of ASCII art provides much needed flair to the narrative. Used sparingly in order to not clutter the terminal, means of implementing more ASCII art in a way which does not do this are under consideration and were earmarked for future implementation when the current workload was compared to the alotted time for completing the app.
