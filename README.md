@@ -32,10 +32,30 @@ The narrative of the adventure is stored under assets in txt files. By doing so,
 ## Name input
 Upon initiation the app requests a username from the user. This username is stored and recalled upon a "win" or "loss" condition. Should the user fail or succeed and then decide to replay, the name input is skipped as the previously entered name remains stored. Only by refusing replay or restarting the app will the user be asked to reenter a name.
 
+Once given, a brief message confirms the name to the user and then proceeds with the adventure.
+
 In terms of narration, the name is requested by the nameless entity, who then "steals" it and promises the user they can have it back if they succeed. The name is indeed returned upon success; in the event of failure, the nameless entity eats the name. This narrative feature was inspired by Hayao Miyazaki's film "Spirited Away", in which a young girls name is comandeered by a witch and held as collateral until she satisfies the conditions of a work contract in order to release her parents.
 
 ### Image of Name Request
 ![Name Request](assets/readme-images/name-request.webp)
+
+### Image of Name Inputted
+![Name Input](assets/readme-images/name-documented.webp)
+
+## Title and Intro
+Next, the user is shown the title card for the app along with an introductory passage to inform them of the narrative framing. Here, the user is asked whether they wish to proceed with the game. If accepted, the narrator commends their bravery and the game continues. Upon refusal, the narrator decries the user as a coward and the app ceases to run.
+
+### Image of Title and Intro
+![Title and Intro](assets/readme-images/title-intro.webp)
+
+### Image of Play Refusal
+![Play Refused](assets/readme-images/refuse-play.webp)
+
+## Path Selection
+If the user agrees to play, they are provided with a selection of pathway. There are two to choose from; one which leads upstairs and another that leads downstairs. It is possible to succeed regardless of which pathway you select here. 
+
+### Image of Play Acceptance and Path Selection
+![Play Accepted](assets/readme-images/accept-play-path.webp)
 
 # Abandoned Features
 
