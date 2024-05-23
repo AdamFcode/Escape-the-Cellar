@@ -26,7 +26,16 @@ LucidChart was selected to visualise the flow of the adventure and to provide a 
 ![LucidChart](assets/readme-images/cellar-flowchart.webp)
 
 # Features
+## Txt Files
+The narrative of the adventure is stored under assets in txt files. By doing so, a function to read the text could be declared and then called throughout the code in order to relay the narrative to the user without crowding the code itself. This also allowed for ASCII art to be implemented in order to provide visual flair for the title, "lose" screen and "win" screen.
 
+## Name input
+Upon initiation the app requests a username from the user. This username is stored and recalled upon a "win" or "loss" condition. Should the user fail or succeed and then decide to replay, the name input is skipped as the previously entered name remains stored. Only by refusing replay or restarting the app will the user be asked to reenter a name.
+
+In terms of narration, the name is requested by the nameless entity, who then "steals" it and promises the user they can have it back if they succeed. The name is indeed returned upon success; in the event of failure, the nameless entity eats the name. This narrative feature was inspired by Hayao Miyazaki's film "Spirited Away", in which a young girls name is comandeered by a witch and held as collateral until she satisfies the conditions of a work contract in order to release her parents.
+
+### Image of Name Request
+![Name Request](assets/readme-images/name-request.webp)
 
 # Abandoned Features
 
