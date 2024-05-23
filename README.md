@@ -210,5 +210,11 @@ All other text content written by AdamFcode
 ## Other
 Microsoft Paint was used to expand/edit the LucidChart image.
 
+The Code Institute Python Linter was used to verify Pep8 adherance.
+
+Gitpod and GitHub were used in tandem to host the repository and write the code.
+
+Heroku was used for deployment, as outlined above.
+
 # Acknowledgement
 With appreciation for aid lent by the project mentor and class CI provided by codeinstitue, as well as fellow students in the slack channel.
