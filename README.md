@@ -177,6 +177,31 @@ Whether the user fails or succeeds, the app offers the option to replay the game
 The app contains branching pathways that lead to different scenarios and provide the user with a varied experience on replay.
 
 ## Validator Testing
+### Pylint
+The Pylint score initially returned a rating in the of roughly seven(exact figure undocumented). 1trhough correct, it was possible to increase the score to 9.83. Two issues remained.
+
+The first is for using the global statement. Worried that changing this would affect the storage and recall of the username later in the app, various articles were consulted on the nature of the issue. It was decided that within the scope of this project it was safe to leave it as is, though it has been noted as an issue for further builds.
+
+Secondly, the "stun-condition" input choices would always evaluate to 2 as they led to the same narrative beat regardless of user selection. As those choices exist purely as "false-hope" scenarios and always result in a failure, it was decided to leave them as was and to figure out a way of sidestepping the issue in future builds.
+
+Below is an image of the Pylint score.
+
+#### Image of Pylint Score
+![Pylint Score](assets/readme-images/pylint-score.webp)
+
+### Code Institute Python Linter
+The entirety of the code was run through the Code Institute Python Linter and returned a variety of issues. These included the following:
+* Line length issues
+*  Trailing lines
+*  Missing or unnecessary spaces
+*  The unnnecessary useage of "return" in several functions
+*  A suggestion to replace exit() with sys.exit()
+*  An issue with the function that accessed, printed and closed txt files.
+
+All of these issues were addressed, with consulted texts listed under credits. Below is an image of the final CI Python Linter score.
+
+#### CI Python Linter Score
+![CI Linter](assets/readme-images/ci-python-linter.webp)
 
 ## Bugs
 
