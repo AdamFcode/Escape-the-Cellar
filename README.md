@@ -130,12 +130,29 @@ Below are images of the win title and how a replay request is presented to the u
 ![Success Replay](assets/readme-images/win-replay.webp)
 
 # Abandoned Features
+## Weapons
+Early planning for the app included an inventory for the user which they could fill with weapons as the story progressed. Abandoned quite quickly, this feature was deemed unwieldy in the scope of this specific project as the included monsters tend to have universal lores that would require specific means of defeating them. It would also require that floors be inserted where the user merely selects a weapon as the intention was to have "dud" weapons that ensured failure. To avoid project bloat and to maintain a realistic scope, the feature was abandoned.
 
+## Multiple Adventures
+Multiple adventures were briefly considered, allowing the user to choose their storyline. Three stories were brainstormed and during this process it became clear that each story would be hindered due to the three different narratives. Instead, the preferred elements from each story were consolidated into one and the "Escape the Cellar" storyline was selected as the optimal framework to explore the ideas that emerged during the brainstorming process.
+
+## Progress Tracker
+The implementation of a tracker was considered to allow the user to keep track of their successes and failures throughout their attempts. However, fears that this would allow users to mentally plot the pathways of the game resulted in the feature being discluded.
  
 # Features Earmarked for Future Implementation
 The following features are intended to be implemented at a future date.
 
+## Expanded Narrative
+More floors and pathways have been earmarked for future development in order to expand the scope of the app. Due to project deadlines, these could not be implemented sooner.
 
+## Asymmetrical Plotting
+As visible in the plotting chart above, the two pathways in the adventure are symmetrical with one another in how they proceed. this allowed for a seamless flow throughout the planning and implementation stages, though it has been noted that some users may be able to identify the pattern upon repeat plays and essentially "gamify" the experience. Though not entirely likely considering how the narrative is presented, it is a noted issue which could be addressed with asymmetrical design should the narrative be expanded.
+
+## Further implementation of ASCII
+The visual effect of ASCII art provides much needed flair to the narrative. Used sparingly in order to not clutter the terminal, means of implementing more ASCII art in a way which does not do this are under consideration and were earmarked for future implementation when the current workload was compared to the alotted time for completing the app.
+
+## Multiple Adventures
+As noted under abandoned features, the possibility of several adventures being offered to the user is one under serious consideration. Once the future implementations for Escape The Cellar have been put in place, the scope of the app can increase and allow for further adventures, perhaps ones that intertwine. First in line would perhaps be an Escape the Forest adventure, which would pick up from the moment the user escaped the cellar. However, it is noted that this may limit the users ability to select their advenutre as one flows narratively from the other.
 
 # Testing
 
