@@ -155,8 +155,26 @@ The visual effect of ASCII art provides much needed flair to the narrative. Used
 As noted under abandoned features, the possibility of several adventures being offered to the user is one under serious consideration. Once the future implementations for Escape The Cellar have been put in place, the scope of the app can increase and allow for further adventures, perhaps ones that intertwine. First in line would perhaps be an Escape the Forest adventure, which would pick up from the moment the user escaped the cellar. However, it is noted that this may limit the users ability to select their advenutre as one flows narratively from the other.
 
 # Testing
-
 ## User Stories Testing
+* As a user, I want to play an interactive game that requires no downloads or installations
+
+The app runs as intended, providing an interactive experience that can be played in the users browser.
+
+* As a user, I want to receive clear instructions and choices from the app
+
+The narrative of the game provides clear guidance and options to the narrator.
+
+* As a user, I want my inputted data to be handled correctly and to return advancement in the "adventure"
+
+The app accepts user input and handles it appropriately, advancing, passing or failing the user where necessary and returning error messages that inform the user of any inaccuracy. In the event of an error, the user is able to continue the game without losing their prior progress.
+
+* As a user, I want to be offered the chance to play again should I win or lose
+
+Whether the user fails or succeeds, the app offers the option to replay the game and keeps the entered username stored.
+
+* As a user, I want to replay the app and reasonably expect a varied experience
+
+The app contains branching pathways that lead to different scenarios and provide the user with a varied experience on replay.
 
 ## Validator Testing
 
